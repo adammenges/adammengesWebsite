@@ -1,0 +1,311 @@
+/* Fonts */
+
+@font-face {
+	font-family: 'LabGrotesque-Light';
+	src: url('./assets/fonts/LabGrotesque/labgrotesque-light.ttf');
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'LabGrotesque-Regular';
+	src: url('./assets/fonts/LabGrotesque/labgrotesque-regular.ttf');
+}
+
+@font-face {
+	font-family: 'LabGrotesque-Medium';
+	src: url('./assets/fonts/LabGrotesque/labgrotesque-medium.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'LabGrotesque-Black';
+	src: url('./assets/fonts/LabGrotesque/labgrotesque-black.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'LabGrotesque-Bold';
+	src: url('./assets/fonts/LabGrotesque/labgrotesque-bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'RobotoMono-Regular';
+	src: url('./assets/fonts/roboto-mono/RobotoMono-Light.ttf');
+}
+
+@font-face {
+	font-family: 'RobotoMono-Regular-Italic';
+	src: url('./assets/fonts/roboto-mono/RobotoMono-LightItalic.ttf');
+	font-style: italic;
+}
+
+::selection {
+	background: rgba(0, 230, 184, 0.2);
+}
+
+/* New stuffs */
+
+.BodySection{
+	font-size: 20px !important;
+}
+
+/*Variables:*/
+:root {
+	--grid-size-x-small: 5px;
+	--grid-size-small: 30px;
+	--grid-size-medium: 60px;
+	--grid-size-medium-neg: -50px;
+	--grid-size-large: 18px;
+	--grid-size-x-large: 190px;
+	--grid-size-xx-large: 400px;
+	--container-size: 1000px;
+
+	--header-height: 80px;
+	--header-text-top: 41px;
+
+	--bar-video-height: 325px;
+
+	--background-color: rgb(244,244,244);
+	--text-color: hsl(0, 0%, 20%);
+	--highlight-color: #00e6b8;
+	--highlight-dark-color: #00d9ad;
+	--white: hsl(0, 0%, 100%);
+}
+/*
+html {
+	background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0.5, hsl(0, 0%, 70%)),
+			color-stop(0.5, var(--background-color))
+	);
+	background: -o-linear-gradient(bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
+	background: -moz-linear-gradient(bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
+	background: -webkit-linear-gradient(bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
+	background: -ms-linear-gradient(bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
+	background: linear-gradient(to bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
+
+} */
+
+body {
+	font-family: 'LabGrotesque-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-color);
+	color: hsl(0, 0%, 15%);
+}
+
+video::-internal-media-controls-overlay-cast-button {
+	display: none;
+}
+
+.stopScrolling {
+	height: 100%;
+	overflow: hidden;
+}
+
+#bodyWrapper {
+	overflow-x: hidden;
+}
+
+.mobile {
+	display: none;
+}
+
+.noDisplay {
+	display: none !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.content {
+	width: var(--container-size);
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	padding-top: var(--header-height);
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow-x: visible;
+}
+
+.section {
+	margin-bottom: var(--grid-size-x-large);
+}
+
+.CoverBodyLarge {
+	font-family: 'LabGrotesque-regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+	font-size: 30px;
+	line-height: 40px;
+	color: hsl(0, 0%, 20%);
+}
+
+.HeadingLarge {
+	font-family: 'LabGrotesque-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+	font-size: 50px;
+	line-height: 50px;
+	color: hsl(0, 0%, 20%);
+	margin-bottom: var(--grid-size-large);
+}
+
+.HeadingLargeLeftOffset {
+	margin-left: -12px;
+}
+
+.BodyLarge {
+	font-family: 'LabGrotesque-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+	font-size: 21px;
+	line-height: 32px;
+	color: hsl(0, 0%, 20%);
+	margin-bottom: var(--grid-size-medium);
+	max-width: 750px;
+}
+
+.HeadingMedium {
+	font-family: 'LabGrotesque-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+	font-size: 32px;
+	line-height: 50px;
+	color: hsl(0, 0%, 20%);
+	margin-bottom: var(--grid-size-x-small);
+}
+
+.HeadingSmall {
+	font-family: 'LabGrotesque-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+	font-size: 24px;
+	line-height: 50px;
+	color: hsl(0, 0%, 20%);
+}
+
+.BodySmall {
+	font-family: 'LabGrotesque-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+	font-size: 18px;
+	line-height: 25px;
+	color: hsl(0, 0%, 20%);
+}
+
+.HeadingCapsXXSmall{
+	font-family: 'LabGrotesque-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+	font-size: 16px;
+	line-height: 15px;
+	/*letter-spacing: 1px;*/
+	/*text-transform: uppercase;*/
+	color: hsl(0, 0%, 60%);
+}
+
+.fullScreenVideo {
+	max-width: var(--container-size);
+	width: var(--container-size);
+}
+
+/* iPad site css */
+@media (max-width : 1100px) {
+	:root {
+
+		--side-padding-mobile: 80px;
+		--grid-size-x-large: 160px;
+	}
+	.content {
+		width: auto;
+		padding-left: var(--side-padding-mobile);
+		padding-right: var(--side-padding-mobile);
+	}
+	.noMobile {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+}
+
+/* Mobile site css */
+@media only screen and (max-width : 645px) {
+	/*Variables:*/
+	:root {
+
+		--grid-size-x-small: 5px;
+		--grid-size-small: 30px;
+		--grid-size-medium: 40px;
+		--grid-size-medium-neg: -50px;
+		--grid-size-large: 50px;
+		--grid-size-x-large: 63px;
+		--grid-size-xx-large: 400px;
+		--container-size: 100%;
+
+		--header-height: 70px;
+		--header-text-top: -15px;
+
+		--bar-video-height: 105px;
+
+		--background-color: rgb(244,244,244);
+		--text-color: hsl(0, 0%, 20%);
+		--highlight-color: #00e6b8;
+		--highlight-dark-color: #00d9ad;
+		--white: hsl(0, 0%, 100%);
+
+		--side-padding-mobile: 24px;
+	}
+
+	.noMobile {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	body {
+		font-size: 27px;
+	}
+
+	#bodyWrapper {
+		overflow-x: hidden;
+	}
+
+	.HeadingMedium {
+		font-size: 23px;
+		line-height: 23px;
+		margin-bottom: 10px;
+	}
+
+	.HeadingLarge {
+		font-size: 32px;
+		line-height: 35px;
+		margin-bottom: 7px;
+	}
+	.HeadingLargeLeftOffset {
+		margin-left: 0;
+	}
+
+	.CoverBodyLarge {
+		font-size: 22px;
+		line-height: 27px;
+		margin-top: 25px;
+	}
+
+	.BodyLarge {
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.HeadingSmall {
+		font-size: 22px;
+		line-height: 22px;
+		margin-bottom: 16px;
+	}
+
+	.BodySmall {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}

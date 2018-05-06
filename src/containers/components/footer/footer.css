@@ -1,0 +1,141 @@
+.footerContainer {
+	width: 100%;
+	background-color: hsl(0, 0%, 70%);
+	color: white !important;
+	font-size: 14px;
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	letter-spacing: 0.2px;
+	font-family: 'LabGrotesque-Light';
+}
+
+.footerPeek {
+	position: fixed;
+	height: 2000px;
+	opacity: 1;
+	background-color: hsl(0, 0%, 70%);
+	left: 0;
+	bottom: -1999px;
+	right: 0;
+	border: none;
+}
+
+.footer {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	width: var(--container-size);
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footerLeft {
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+}
+
+.footerHeader {
+	font-family: 'LabGrotesque-Medium';
+	margin-bottom: 8px;
+}
+
+.footerText {
+	display: block;
+	margin-bottom: 8px;
+	color: white !important;
+}
+
+.footerText:active {
+	opacity: 0.7;
+
+}
+
+.footerLink {
+	cursor: pointer;
+}
+
+.footerRight {
+	text-align: right;
+}
+
+.footerJoinBetaLink{
+	/*border: 2px solid var(--highlight-dark-color);*/
+	/*border-radius: 10px;*/
+	width: 100vw !important;
+	background-color: var(--highlight-color);
+	height: 60px;
+	text-align: center !important;
+	max-width: 100% !important;
+	cursor: pointer;
+	position: absolute;
+	margin-top: -338px;
+}
+
+.footerJoinBetaLink a{
+	position: relative;
+	top: 17px;
+	/*color: var(--highlight-dark-color) !important;*/
+	color: white;
+	margin-bottom: 0 !important;
+	font-family: 'LabGrotesque-Medium' !important;
+}
+
+.footerJoinBetaLink a:active{
+	opacity: 0.7;
+}
+
+.footerJoinBetaLink:active{
+	opacity: 0.7;
+}
+
+@media (max-width: 1100px) {
+	.footer {
+		width: calc(100vw - 2*var(--side-padding-mobile));
+	}
+	.footerJoinBetaLink {
+		display: none !important;
+	}
+}
+
+
+@media only screen and (max-width : 650px) {
+	.footerContainer {
+		width: 100%;
+		margin-top: 60px;
+	}
+
+	.footerJoinBetaLink {
+		/*margin-top: calc(var(--grid-size-x-large)*1.5) !important;*/
+		display: block !important;
+	}
+
+	.footer {
+		width: calc(100vw - 2*var(--side-padding-mobile));
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: var(--header-height);
+		padding-bottom: calc(var(--header-height)/2);
+	}
+
+	.footerRight {
+		margin-top: calc(var(--header-height)/1.25);
+		text-align: center;
+		width: 100%;
+		opacity: 0.5;
+	}
+
+	.footerRight .footerText {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	.footerRight .footerText:first-child {
+		margin-right: 5px;
+	}
+}

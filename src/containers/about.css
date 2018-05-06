@@ -1,0 +1,197 @@
+.mainAboutHeader {
+	margin-top: 100px;
+	color: hsl(0, 0%, 23%);
+}
+
+.mainAboutHeaderTitle {
+	font-family: 'LabGrotesque-Bold';
+	font-size: 40px;
+	top: 200px;
+}
+
+.mainAboutHeaderContactUs {
+	font-family: 'LabGrotesque-Medium' !important;
+	position: relative;
+	z-index: 100;
+	float: right;
+	top: 24px;
+	user-select: none;
+	cursor: pointer;
+}
+
+.mainAboutHeaderContactUs:active {
+	opacity: 0.7;
+}
+
+.mainAboutHeaderContactUsLink {
+	color: hsl(0, 0%, 20%);
+}
+
+.mainAboutHumans {
+	font-family: 'LabGrotesque-Regular';
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 140px;
+	margin-bottom: 180px;
+	width: 1000px;
+}
+
+.mainAboutHuman {
+	display: flex;
+	margin-bottom: 84px;
+	align-items: center;
+}
+.mainAboutHuman:last-child {
+	margin-bottom: 0;
+}
+
+.mainAboutHumanPhoto {
+	display: inline-block;
+	width: 250px;
+	min-width: 250px;
+	height: 250px;
+	border-radius: 250px;
+	background-size: 250px 250px !important;
+	user-select: none;
+}
+
+.mainAboutHumanRightSide {
+	margin-left: 62px;
+}
+
+.mainAboutHumanTitle {
+	font-family: 'LabGrotesque-Medium' !important;
+	margin-top: -8px;
+}
+
+.mainAboutHumanText {
+	margin-top: 10px;
+	margin-bottom: 0 !important;
+}
+
+.mainAboutHumanNameSocial{
+	margin-top: 16px;
+
+}
+
+.mainAboutHumanNameSocial a {
+	color: hsl(0, 0%, 60%) !important;
+	margin-right: 15px;
+}
+
+/* mobile site css */
+@media only screen and (max-width: 1100px) {
+	.mainAboutHeader {
+		margin-top: 100px;
+	}
+
+	.mainAboutHeaderTitle {
+		font-size: 40px;
+		top: 200px;
+	}
+
+	.mainAboutHeaderContactUs {
+		font-family: 'LabGrotesque-Medium' !important;
+		/*opacity: 0.5;*/
+		float: none;
+		position: relative;
+		z-index: 100;
+		top: -25px;
+		user-select: none;
+		cursor: pointer;
+	}
+
+	.mainAboutHeaderContactUs:active {
+		opacity: 0.7;
+	}
+
+	.mainAboutHeaderContactUsLink {
+		color: hsl(0, 0%, 20%);
+	}
+
+	.aboutBody{
+		margin-bottom: 20px!important;
+	}
+
+	.mainAboutHumans {
+		font-size: 15px;
+		margin: 0 auto;
+		margin-top: var(--grid-size-x-large);
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.mainAboutHuman {
+		margin-bottom: calc(var(--grid-size-x-large)*0.75);
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.mainAboutHumanRightSide {
+		display: block;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	.mainAboutHumanPhoto {
+		margin-left: 0;
+		margin-right: auto;
+		margin-bottom: 20px;
+		width: 150px;
+		min-width: 150px;
+		height: 150px;
+		border-radius: 75px;
+		background-size: 150px 150px !important;
+	}
+
+	.mainAboutHumanTitle {
+		font-family: 'LabGrotesque-Medium' !important;
+		position: relative;
+		top: -8px;
+	}
+
+	.mainAboutHumanName {
+		margin-bottom: 22px !important;
+	}
+
+	.mainAboutHumanText {
+		max-width: 750px;
+		margin-top: -1px;
+		margin-bottom: 10px !important;
+	}
+
+	.mainAboutHuman:last-child {
+		margin-bottom: 100px !important;
+	}
+
+	.mainAboutHumanNameSocial{
+		margin-top: 16px;
+
+	}
+
+	.mainAboutHumanNameSocial a {
+		color: hsl(0, 0%, 60%) !important;
+	}
+}
+
+@media only screen and (max-width: 645px) {
+
+	.mainAboutHuman {
+		margin-bottom: calc(var(--grid-size-x-large) + var(--grid-size-x-small));
+	}
+
+	.mainAboutHumanPhoto {
+		margin-left: 0;
+		margin-right: auto;
+		margin-bottom: 20px;
+		width: 120px;
+		min-width: 120px;
+		height: 120px;
+		border-radius: 60px;
+		background-size: 120px 120px !important;
+	}
+
+	.mainAboutHeader {
+		margin-top: 60px;
+	}
+}
