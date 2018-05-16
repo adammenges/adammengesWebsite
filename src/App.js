@@ -3,10 +3,8 @@ import {Router, Route, Switch} from 'react-static';
 import {hot} from 'react-hot-loader';
 import {Helmet} from 'react-helmet';
 import rp from 'request-promise';
-import Header from './containers/components/header/header';
 import Home from './containers/Home';
 import About from './containers/About';
-import Footer from './containers/components/footer/footer';
 import ReactGA from 'react-ga';
 
 import './app.css';

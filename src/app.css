@@ -72,22 +72,6 @@
 	--highlight-dark-color: #00d9ad;
 	--white: hsl(0, 0%, 100%);
 }
-/*
-html {
-	background: -webkit-gradient(
-			linear,
-			left top,
-			left bottom,
-			color-stop(0.5, hsl(0, 0%, 70%)),
-			color-stop(0.5, var(--background-color))
-	);
-	background: -o-linear-gradient(bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
-	background: -moz-linear-gradient(bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
-	background: -webkit-linear-gradient(bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
-	background: -ms-linear-gradient(bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
-	background: linear-gradient(to bottom, hsl(0, 0%, 70%) 100%, var(--background-color) 50%);
-
-} */
 
 body {
 	font-family: 'LabGrotesque-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
@@ -96,10 +80,6 @@ body {
 	padding: 0;
 	background-color: var(--background-color);
 	color: hsl(0, 0%, 15%);
-}
-
-video::-internal-media-controls-overlay-cast-button {
-	display: none;
 }
 
 .stopScrolling {

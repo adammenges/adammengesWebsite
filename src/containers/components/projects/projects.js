@@ -130,6 +130,24 @@ export default class Projects extends React.PureComponent {
 						</div>
 					</div>
 
+					<div className="WorkSectionBody">
+						<div className="WorkSectionBodyCompany">
+							<a href="http://headline.adammenges.com">Headline</a>
+						</div>
+						<div className="WorkSectionBodyImage">
+							[image or video]
+						</div>
+						<div className="WorkSectionBodyContent">
+							Headline sources Hacker News, various sub-reddits, and twitter; then it uses machine learning to extract the best articles (based on my liked and disliked articles over the years), and automatically adds them to a users Pocket/Instapaper account. Thousands of users accross the word.
+							<div className="WorkSectionBodyContentListHeader">
+								Resources:
+							</div>
+							<div className="WorkSectionBodyContentList">
+								- <a href="http://headline.adammenges.com">Headline</a><br/>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		);
