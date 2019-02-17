@@ -1,144 +1,137 @@
 /* all the new stuffs */
 
 .nameHeader {
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-	/* margin-bottom: 2px; */
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  /* margin-bottom: 2px; */
 }
 
 .WorkSectionHeader {
-	font-size: 27px;
-	font-family: 'LabGrotesque-Medium';
-	margin-bottom: 10px;
+  font-size: 27px;
+  font-family: 'LabGrotesque-Medium';
+  margin-bottom: 10px;
 }
 
 .horizontalBar {
-	width: 777px;
-	height: 3px;
-	background-color: #AAA;
-	border-radius: 3.5px;
-	margin-top: 17px;
-	margin-bottom: 48px;
-}
-
-.WorkSectionBody {
-	/* font-size: 30px; */
+  height: 3px;
+  background-color: #AAA;
+  border-radius: 3.5px;
+  margin-top: 17px;
+  margin-bottom: 48px;
 }
 
 .WorkSectionBodyContentList {
-	margin-left: 10px;
-	display: block;
-	line-height: 17px;
+  margin-left: 10px;
+  display: block;
+  line-height: 17px;
 }
 
 .WorkSectionBodyCompany {
-	font-size: 20px;
-	font-family: 'LabGrotesque-Medium';
-	display: inline;
-	/* margin-bottom: 3px; */
+  font-size: 20px;
+  font-family: 'LabGrotesque-Medium';
+  display: inline;
 }
 
 .WorkSectionBodyTitle {
-	font-size: 17px;
-	display: inline-block;
-	/* float: right; */
+  font-size: 17px;
+  display: inline-block;
+  /* float: right; */
 }
 
 .WorkSectionBodyContentListHeader{
-	margin-top: 7px;
+  margin-top: 7px;
 }
 
 .WorkSectionBodyContent {
-	font-size: 15px;
-	line-height: 18px;
-	width: 570px;
-	margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 18px;
+  width: 570px;
+  margin-bottom: 12px;
 }
 
 #trainingVideoLocation {
-	max-height: var(--bar-video-height);
+  max-height: var(--bar-video-height);
 }
 
 .projectsImage {
-	height: var(--bar-video-height);
-	width: auto;
-	position: relative;
-	left: -1003px;
-	/*margin-bottom: var(--grid-size-medium);*/
+  height: var(--bar-video-height);
+  width: auto;
+  position: relative;
+  left: -1003px;
 }
 
 .fastTrainEdge {
-	position: relative;
-	left: -4003px;
-	top: -330px;
-	background-color: #bebebe;
-	height: var(--bar-video-height);
-	width: 3000px;
-	margin: 0;
+  position: relative;
+  left: -4003px;
+  top: -330px;
+  background-color: #bebebe;
+  height: var(--bar-video-height);
+  width: 3000px;
+  margin: 0;
 }
 
 @media only screen and (max-width : 1100px) {
-	#trainingVideoLocation {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		max-height: 100%;
-	}
-	.projectsImage {
-		width: 130vw;
-		height: auto;
-		margin-bottom: 0;
-		left: auto;
-	}
+  #trainingVideoLocation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-height: 100%;
+  }
+  .projectsImage {
+    width: 130vw;
+    height: auto;
+    margin-bottom: 0;
+    left: auto;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-	.projectsImage {
-		width: 130vw;
-	}
+  .projectsImage {
+    width: 130vw;
+  }
 }
 
 @media only screen and (max-width: 974px) {
-	.projectsImage {
-		width: 166vw;
-	}
+  .projectsImage {
+    width: 166vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-	.projectsImage {
-		width: 162vw;
-	}
+  .projectsImage {
+    width: 162vw;
+  }
 }
 
 @media only screen and (max-width: 645px) {
-	.projectsImage {
-		width: 173.5vw;
-	}
+  .projectsImage {
+    width: 173.5vw;
+  }
 }
 
 @media only screen and (max-width: 590px) {
-	.projectsImage {
-		width: 173vw;
-	}
+  .projectsImage {
+    width: 173vw;
+  }
 }
 
 @media only screen and (max-width: 414px) {
-	.projectsImage {
-		width: 170vw;
-	}
+  .projectsImage {
+    width: 170vw;
+  }
 }
 
-	@media only screen and (max-width: 375px) {
-		.projectsImage {
-			width: 169vw;
-		}
-	}
+  @media only screen and (max-width: 375px) {
+    .projectsImage {
+      width: 169vw;
+    }
+  }
 
 
-	@media only screen and (max-width: 320px) {
-		.projectsImage {
-		  left: -4px;
-			width: 167vw;
-		}
-	}
+  @media only screen and (max-width: 320px) {
+    .projectsImage {
+      left: -4px;
+      width: 167vw;
+    }
+  }

@@ -1,0 +1,8 @@
+[
+  {
+    "srcDir": "/src",
+    "destDir": "/src",
+    "files": "**/*.ts*",
+    "command": "prettier --single-quote --trailing-comma all --no-bracket-spacing --write '${srcFile}'"
+  }
+]
