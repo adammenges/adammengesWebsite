@@ -6,6 +6,20 @@ export default class Projects extends React.PureComponent {
 
   componentWillUnmount() { }
 
+  getWindowSize() {
+    const width =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth
+
+    const height =
+      window.innerHeight ||
+      document.documentElement.clientHeight ||
+      document.body.clientHeight
+
+    return [width, height]
+  }
+
   render() {
     return (
       <div id="projectsContainer" className="section">
@@ -19,7 +33,11 @@ export default class Projects extends React.PureComponent {
         >
           Adam Menges
         </div>
-        <div className="horizontalBar" style={{ width: '400px' }} />
+        <div
+          className="horizontalBar"
+          style={{
+            // width: `${this.getWindowSize()[0] - (24 * 2)}px`,
+          }} />
         <div
           className="BodyLarge"
           data-aos="fade-up"

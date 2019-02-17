@@ -3,20 +3,6 @@ import Projects from './components/projects/projects'
 
 
 export default class Home extends React.Component {
-  getWindowSize() {
-    const width =
-      window.innerWidth ||
-      document.documentElement.clientWidth ||
-      document.body.clientWidth
-
-    const height =
-      window.innerHeight ||
-      document.documentElement.clientHeight ||
-      document.body.clientHeight
-
-    return [width, height]
-  }
-
   // 404 solution from here https://github.com/nozzle/react-static/issues/345
   makeReady = () => {
     if (!this.state.ready) {

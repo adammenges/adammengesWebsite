@@ -13,12 +13,16 @@
   margin-bottom: 10px;
 }
 
+#projectsContainer {
+  overflow: scroll;
+}
+
 .horizontalBar {
   height: 3px;
   background-color: #AAA;
   border-radius: 3.5px;
-  margin-top: 17px;
-  margin-bottom: 48px;
+  margin-top: 29px;
+  margin-bottom: 29px;
 }
 
 .WorkSectionBodyContentList {
@@ -46,7 +50,7 @@
 .WorkSectionBodyContent {
   font-size: 15px;
   line-height: 18px;
-  width: 570px;
+  /* width: 570px; */
   margin-bottom: 12px;
 }
 

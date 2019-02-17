@@ -189,7 +189,6 @@ img {
 /* iPad site css */
 @media (max-width : 1100px) {
   :root {
-
     --side-padding-mobile: 80px;
     --grid-size-x-large: 160px;
   }
