@@ -17,6 +17,14 @@
   overflow: scroll;
 }
 
+.HeadingLargeName {
+  font-family: 'LabGrotesque-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: hsl(0, 0%, 20%);
+  margin-bottom: 0px;
+}
+
 .horizontalBar {
   height: 3px;
   background-color: #AAA;

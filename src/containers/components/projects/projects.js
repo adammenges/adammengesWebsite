@@ -24,7 +24,7 @@ export default class Projects extends React.PureComponent {
     return (
       <div id="projectsContainer" className="section">
         <div
-          className="HeadingLarge nameHeader"
+          className="HeadingLargeName nameHeader"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-anchor="#projectsContainer"
