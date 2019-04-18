@@ -9,7 +9,7 @@
 
 .WorkSectionHeader {
   font-size: 27px;
-  font-family: 'LabGrotesque-Medium';
+  font-family: "LabGrotesque-Medium";
   margin-bottom: 10px;
 }
 
@@ -17,8 +17,40 @@
   overflow: scroll;
 }
 
+.ContactSectionHeader {
+  font-size: 27px;
+  font-family: "LabGrotesque-Medium";
+  margin-bottom: 3px;
+}
+
+.ContactSectionAll {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* background-color: rebeccapurple; */
+}
+
+.ContactSectionText {
+  margin-top: auto;
+  margin-bottom: auto;
+  /* margin-left: 0; */
+  /* width: 100px;
+  height: 100px; */
+  /* background-color: aquamarine; */
+}
+
+.ImageSection {
+  /* display: inline; */
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 150px;
+  height: 150px;
+  /* float: right; */
+}
+
 .HeadingLargeName {
-  font-family: 'LabGrotesque-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+  font-family: "LabGrotesque-Medium", "Helvetica Neue", "Helvetica", "Arial",
+    Sans-Serif;
   font-size: 50px;
   line-height: 50px;
   color: hsl(0, 0%, 20%);
@@ -27,7 +59,7 @@
 
 .horizontalBar {
   height: 3px;
-  background-color: #AAA;
+  background-color: #aaa;
   border-radius: 3.5px;
   margin-top: 29px;
   margin-bottom: 29px;
@@ -41,7 +73,7 @@
 
 .WorkSectionBodyCompany {
   font-size: 20px;
-  font-family: 'LabGrotesque-Medium';
+  font-family: "LabGrotesque-Medium";
   display: inline;
 }
 
@@ -51,7 +83,7 @@
   /* float: right; */
 }
 
-.WorkSectionBodyContentListHeader{
+.WorkSectionBodyContentListHeader {
   margin-top: 7px;
 }
 
@@ -83,7 +115,7 @@
   margin: 0;
 }
 
-@media only screen and (max-width : 1100px) {
+@media only screen and (max-width: 1100px) {
   #trainingVideoLocation {
     display: flex;
     align-items: center;
@@ -134,16 +166,15 @@
   }
 }
 
-  @media only screen and (max-width: 375px) {
-    .projectsImage {
-      width: 169vw;
-    }
+@media only screen and (max-width: 375px) {
+  .projectsImage {
+    width: 169vw;
   }
+}
 
-
-  @media only screen and (max-width: 320px) {
-    .projectsImage {
-      left: -4px;
-      width: 167vw;
-    }
+@media only screen and (max-width: 320px) {
+  .projectsImage {
+    left: -4px;
+    width: 167vw;
   }
+}

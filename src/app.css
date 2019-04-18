@@ -1,42 +1,42 @@
 /* Fonts */
 
 @font-face {
-  font-family: 'LabGrotesque-Light';
-  src: url('./assets/fonts/LabGrotesque/labgrotesque-light.ttf');
+  font-family: "LabGrotesque-Light";
+  src: url("./assets/fonts/LabGrotesque/labgrotesque-light.ttf");
   font-weight: 100;
 }
 
 @font-face {
-  font-family: 'LabGrotesque-Regular';
-  src: url('./assets/fonts/LabGrotesque/labgrotesque-regular.ttf');
+  font-family: "LabGrotesque-Regular";
+  src: url("./assets/fonts/LabGrotesque/labgrotesque-regular.ttf");
 }
 
 @font-face {
-  font-family: 'LabGrotesque-Medium';
-  src: url('./assets/fonts/LabGrotesque/labgrotesque-medium.ttf');
+  font-family: "LabGrotesque-Medium";
+  src: url("./assets/fonts/LabGrotesque/labgrotesque-medium.ttf");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'LabGrotesque-Black';
-  src: url('./assets/fonts/LabGrotesque/labgrotesque-black.ttf');
+  font-family: "LabGrotesque-Black";
+  src: url("./assets/fonts/LabGrotesque/labgrotesque-black.ttf");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'LabGrotesque-Bold';
-  src: url('./assets/fonts/LabGrotesque/labgrotesque-bold.ttf');
+  font-family: "LabGrotesque-Bold";
+  src: url("./assets/fonts/LabGrotesque/labgrotesque-bold.ttf");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'RobotoMono-Regular';
-  src: url('./assets/fonts/roboto-mono/RobotoMono-Light.ttf');
+  font-family: "RobotoMono-Regular";
+  src: url("./assets/fonts/roboto-mono/RobotoMono-Light.ttf");
 }
 
 @font-face {
-  font-family: 'RobotoMono-Regular-Italic';
-  src: url('./assets/fonts/roboto-mono/RobotoMono-LightItalic.ttf');
+  font-family: "RobotoMono-Regular-Italic";
+  src: url("./assets/fonts/roboto-mono/RobotoMono-LightItalic.ttf");
   font-style: italic;
 }
 
@@ -46,7 +46,7 @@
 
 /* New stuffs */
 
-.BodySection{
+.BodySection {
   font-size: 20px !important;
 }
 
@@ -61,12 +61,12 @@
   --grid-size-xx-large: 400px;
   --container-size: 1000px;
 
-  --header-height: 80px;
+  --header-height: 30px;
   --header-text-top: 41px;
 
   --bar-video-height: 325px;
 
-  --background-color: rgb(244,244,244);
+  --background-color: rgb(244, 244, 244);
   --text-color: hsl(0, 0%, 20%);
   --highlight-color: #00e6b8;
   --highlight-dark-color: #00d9ad;
@@ -74,7 +74,8 @@
 }
 
 body {
-  font-family: 'LabGrotesque-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+  font-family: "LabGrotesque-Regular", "Helvetica Neue", "Helvetica", "Arial",
+    Sans-Serif;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -123,14 +124,16 @@ img {
 }
 
 .CoverBodyLarge {
-  font-family: 'LabGrotesque-regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+  font-family: "LabGrotesque-regular", "Helvetica Neue", "Helvetica", "Arial",
+    Sans-Serif;
   font-size: 30px;
   line-height: 40px;
   color: hsl(0, 0%, 20%);
 }
 
 .HeadingLarge {
-  font-family: 'LabGrotesque-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+  font-family: "LabGrotesque-Medium", "Helvetica Neue", "Helvetica", "Arial",
+    Sans-Serif;
   font-size: 50px;
   line-height: 50px;
   color: hsl(0, 0%, 20%);
@@ -142,16 +145,18 @@ img {
 }
 
 .BodyLarge {
-  font-family: 'LabGrotesque-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+  font-family: "LabGrotesque-Regular", "Helvetica Neue", "Helvetica", "Arial",
+    Sans-Serif;
   font-size: 21px;
   line-height: 32px;
   color: hsl(0, 0%, 20%);
-  margin-bottom: var(--grid-size-medium);
+  /* margin-bottom: var(--grid-size-medium); */
   max-width: 750px;
 }
 
 .HeadingMedium {
-  font-family: 'LabGrotesque-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+  font-family: "LabGrotesque-Medium", "Helvetica Neue", "Helvetica", "Arial",
+    Sans-Serif;
   font-size: 32px;
   line-height: 50px;
   color: hsl(0, 0%, 20%);
@@ -159,21 +164,24 @@ img {
 }
 
 .HeadingSmall {
-  font-family: 'LabGrotesque-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+  font-family: "LabGrotesque-Medium", "Helvetica Neue", "Helvetica", "Arial",
+    Sans-Serif;
   font-size: 24px;
   line-height: 50px;
   color: hsl(0, 0%, 20%);
 }
 
 .BodySmall {
-  font-family: 'LabGrotesque-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+  font-family: "LabGrotesque-Regular", "Helvetica Neue", "Helvetica", "Arial",
+    Sans-Serif;
   font-size: 18px;
   line-height: 25px;
   color: hsl(0, 0%, 20%);
 }
 
-.HeadingCapsXXSmall{
-  font-family: 'LabGrotesque-Regular', 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
+.HeadingCapsXXSmall {
+  font-family: "LabGrotesque-Regular", "Helvetica Neue", "Helvetica", "Arial",
+    Sans-Serif;
   font-size: 16px;
   line-height: 15px;
   /*letter-spacing: 1px;*/
@@ -187,7 +195,7 @@ img {
 }
 
 /* iPad site css */
-@media (max-width : 1100px) {
+@media (max-width: 1100px) {
   :root {
     --side-padding-mobile: 80px;
     --grid-size-x-large: 160px;
@@ -207,10 +215,9 @@ img {
 }
 
 /* Mobile site css */
-@media only screen and (max-width : 645px) {
+@media only screen and (max-width: 645px) {
   /*Variables:*/
   :root {
-
     --grid-size-x-small: 5px;
     --grid-size-small: 30px;
     --grid-size-medium: 40px;
@@ -225,7 +232,7 @@ img {
 
     --bar-video-height: 105px;
 
-    --background-color: rgb(244,244,244);
+    --background-color: rgb(244, 244, 244);
     --text-color: hsl(0, 0%, 20%);
     --highlight-color: #00e6b8;
     --highlight-dark-color: #00d9ad;
