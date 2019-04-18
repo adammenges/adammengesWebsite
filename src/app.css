@@ -100,10 +100,6 @@ body {
   display: none !important;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
 }
@@ -152,6 +148,7 @@ img {
   color: hsl(0, 0%, 20%);
   /* margin-bottom: var(--grid-size-medium); */
   max-width: 750px;
+  margin: 0 auto;
 }
 
 .HeadingMedium {
@@ -212,6 +209,16 @@ img {
   .mobile {
     display: block;
   }
+}
+
+a {
+  color: hsl(0, 0%, 30%);
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(0, 0%, 30%);
+  text-decoration: none;
 }
 
 /* Mobile site css */

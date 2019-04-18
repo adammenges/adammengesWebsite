@@ -53,6 +53,12 @@ export default class Projects extends React.PureComponent {
                 <div className="WorkSectionBodyCompany">Phone – </div>
                 <div className="WorkSectionBodyTitle">720-484-0275</div>
               </div>
+              {/* places you can find me on the web: */}
+              <div className="WorkSectionBody">
+                <div className="WorkSectionBodyTitle">
+                  [] [] [] [] [] [] [] []
+                </div>
+              </div>
               {/* Just Icons for the rest of these */}
               {/* <div className="WorkSectionBody">
                 <div className="WorkSectionBodyCompany">Instagram – </div>
@@ -114,6 +120,7 @@ export default class Projects extends React.PureComponent {
           data-aos-delay="200"
         >
           <div className="WorkSectionHeader">Projects</div>
+
           <div className="WorkSectionBody">
             <div className="WorkSectionBodyCompany">Lobe</div>
             <div className="WorkSectionBodyImage">[image or video]</div>
@@ -160,6 +167,22 @@ export default class Projects extends React.PureComponent {
                 - website <br />
                 - some article
               </div>
+            </div>
+          </div>
+
+          <div className="WorkSectionBody">
+            <div className="WorkSectionBodyCompany">Apple</div>
+            <div className="WorkSectionBodyImage">[image or video]</div>
+            <div className="WorkSectionBodyContent">
+              Product Manager and Machine Learnning Engineer, dope ass company
+            </div>
+          </div>
+
+          <div className="WorkSectionBody">
+            <div className="WorkSectionBodyCompany">SendGrid</div>
+            <div className="WorkSectionBodyImage">[image or video]</div>
+            <div className="WorkSectionBodyContent">
+              Earily Engineer, using machine learning to stop spam
             </div>
           </div>
 

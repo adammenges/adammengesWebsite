@@ -26,7 +26,8 @@
 .ContactSectionAll {
   display: flex;
   /* align-items: center; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   margin: 0 auto;
   /* background-color: rebeccapurple; */
 }
@@ -42,7 +43,8 @@
 
 .ImageSection {
   /* display: inline; */
-  margin-right: 20px;
+  /* margin-right: 3%; */
+  margin-left: 20px;
   overflow: hidden;
   border-radius: 150px;
   height: 150px;
@@ -51,7 +53,7 @@
 
 .HeadingLargeName {
   font-family: "LabGrotesque-Medium", "Helvetica Neue", "Helvetica", "Arial",
-    Sans-Serif;
+    "Sans-Serif";
   font-size: 50px;
   line-height: 50px;
   color: hsl(0, 0%, 20%);
@@ -64,6 +66,9 @@
   border-radius: 3.5px;
   margin-top: 29px;
   margin-bottom: 29px;
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .WorkSectionBodyContentList {
@@ -104,16 +109,6 @@
   width: auto;
   position: relative;
   left: -1003px;
-}
-
-.fastTrainEdge {
-  position: relative;
-  left: -4003px;
-  top: -330px;
-  background-color: #bebebe;
-  height: var(--bar-video-height);
-  width: 3000px;
-  margin: 0;
 }
 
 @media only screen and (max-width: 1100px) {
