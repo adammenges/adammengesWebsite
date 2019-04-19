@@ -1,5 +1,7 @@
 import React from "react";
 import "./projects.css";
+import ProjectScroller from "./projectScroller/projectScroller";
+import BusinessCard from "./businessCard/businessCard";
 
 export default class Projects extends React.PureComponent {
   componentDidMount() {}
@@ -23,66 +25,7 @@ export default class Projects extends React.PureComponent {
   render() {
     return (
       <div id="projectsContainer" className="section">
-        <div
-          className="HeadingLargeName nameHeader"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-anchor="#projectsContainer"
-          data-aos-duration="1000"
-          data-aos-delay="0"
-        >
-          Adam Menges
-        </div>
-        <div className="horizontalBar" />
-        <div
-          className="BodyLarge"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-anchor="#projectsContainer"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-        >
-          {/* <div className="ContactSectionHeader">Contact</div> */}
-          <div className="ContactSectionAll">
-            <div className="ContactSectionText">
-              <div className="WorkSectionBody">
-                <div className="WorkSectionBodyCompany">Email – </div>
-                <div className="WorkSectionBodyTitle"> adam@adammenges.com</div>
-              </div>
-              <div className="WorkSectionBody">
-                <div className="WorkSectionBodyCompany">Phone – </div>
-                <div className="WorkSectionBodyTitle">720-484-0275</div>
-              </div>
-              {/* places you can find me on the web: */}
-              <div className="WorkSectionBody">
-                <div className="WorkSectionBodyTitle">
-                  [] [] [] [] [] [] [] []
-                </div>
-              </div>
-              {/* Just Icons for the rest of these */}
-              {/* <div className="WorkSectionBody">
-                <div className="WorkSectionBodyCompany">Instagram – </div>
-                <div className="WorkSectionBodyTitle">@adammenges</div>
-              </div>
-              <div className="WorkSectionBody">
-                <div className="WorkSectionBodyCompany">Twitter – </div>
-                <div className="WorkSectionBodyTitle">@adammenges</div>
-              </div>
-              <div className="WorkSectionBody">
-                <div className="WorkSectionBodyCompany">Telegram – </div>
-                <div className="WorkSectionBodyTitle">@adammenges</div>
-              </div>
-              <div className="WorkSectionBody">
-                <div className="WorkSectionBodyCompany">KeyBase – </div>
-                <div className="WorkSectionBodyTitle">@adammenges</div>
-              </div> */}
-            </div>
-            <div className="ImageSection">
-              <img src="/me.jpg" width="150" height="150" />
-            </div>
-          </div>
-        </div>
-        <div className="horizontalBar" />
+        <BusinessCard />
         {/* now for work */}
         {/* <div
           className="BodyLarge"
@@ -119,20 +62,27 @@ export default class Projects extends React.PureComponent {
           data-aos-duration="1000"
           data-aos-delay="200"
         >
-          <div className="WorkSectionHeader">Projects</div>
+          {/* <div className="WorkSectionHeader">Projects</div> */}
 
           <div className="WorkSectionBody">
             <div className="WorkSectionBodyCompany">Lobe</div>
-            <div className="WorkSectionBodyImage">[image or video]</div>
+            <div className="WorkSectionBodyImage">
+              <ProjectScroller baseImageUrl="/lobe/base.jpg" />
+            </div>
             <div className="WorkSectionBodyContent">
-              Visual programing language for developing nural networks. Passion
-              / research project done along side my two co founders -- Mike
-              Matas and Markus Beisinger
-              <div className="WorkSectionBodyContentListHeader">Resources:</div>
+              Helping more people build intelligence into their apps by making
+              it simple and understandable. Acquired by Microsoft.
+              {/* Maybe put stuff like this at the end of the scoller */}
+              {/* <div className="WorkSectionBodyContentListHeader">Resources:</div>
               <div className="WorkSectionBodyContentList">
                 - website <br />
                 - some article
               </div>
+              <div className="WorkSectionBodyContentListHeader">With:</div>
+              <div className="WorkSectionBodyContentList">
+                - Mike Matas <br />
+                - Markus Bisinger
+              </div> */}
             </div>
           </div>
 
@@ -174,7 +124,7 @@ export default class Projects extends React.PureComponent {
             <div className="WorkSectionBodyCompany">Apple</div>
             <div className="WorkSectionBodyImage">[image or video]</div>
             <div className="WorkSectionBodyContent">
-              Product Manager and Machine Learnning Engineer, dope ass company
+              Product Manager and Machine Learnning Engineer. Mindful Bicycles.
             </div>
           </div>
 
@@ -182,7 +132,8 @@ export default class Projects extends React.PureComponent {
             <div className="WorkSectionBodyCompany">SendGrid</div>
             <div className="WorkSectionBodyImage">[image or video]</div>
             <div className="WorkSectionBodyContent">
-              Earily Engineer, using machine learning to stop spam
+              Earily Engineer, using machine learning to stop spam. Acquired by
+              Twilio.
             </div>
           </div>
 

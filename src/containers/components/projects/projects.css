@@ -17,40 +17,6 @@
   overflow: scroll;
 }
 
-.ContactSectionHeader {
-  font-size: 27px;
-  font-family: "LabGrotesque-Medium";
-  margin-bottom: 3px;
-}
-
-.ContactSectionAll {
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  justify-content: center;
-  margin: 0 auto;
-  /* background-color: rebeccapurple; */
-}
-
-.ContactSectionText {
-  margin-top: auto;
-  margin-bottom: auto;
-  /* margin-left: 0; */
-  /* width: 100px;
-  height: 100px; */
-  /* background-color: aquamarine; */
-}
-
-.ImageSection {
-  /* display: inline; */
-  /* margin-right: 3%; */
-  margin-left: 20px;
-  overflow: hidden;
-  border-radius: 150px;
-  height: 150px;
-  /* float: right; */
-}
-
 .HeadingLargeName {
   font-family: "LabGrotesque-Medium", "Helvetica Neue", "Helvetica", "Arial",
     "Sans-Serif";
