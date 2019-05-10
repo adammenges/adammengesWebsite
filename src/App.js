@@ -22,6 +22,8 @@ function App() {
         <Link to="/blog">Blog</Link>
         <Link to="/dynamic">Dynamic</Link>
       </nav> */}
+      <div id="footerBackground" />
+      <div id="headerBackground" />
       <div className="content">
         <React.Suspense fallback={<em>Loading...</em>}>
           <Router>
