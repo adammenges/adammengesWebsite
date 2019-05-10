@@ -15,6 +15,14 @@ body {
   padding: 0;
 }
 
+a {
+  font-family: "Lato", sans-serif;
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+}
+
 #headerBackground {
   position: fixed;
   top: 0;
