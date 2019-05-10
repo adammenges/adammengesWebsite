@@ -1267,11 +1267,15 @@ var external_react_resize_aware_default = /*#__PURE__*/__webpack_require__.n(ext
       fontSize: 17,
       marginTop: -2
     }
-  }, "adam@adammenges.com"), external_react_default.a.createElement("div", {
+  }, external_react_default.a.createElement("a", {
+    href: "mailto:adam@adammenges.com"
+  }, "adam@adammenges.com")), external_react_default.a.createElement("div", {
     style: {
       fontSize: 17
     }
-  }, "720-484-0275")));
+  }, external_react_default.a.createElement("a", {
+    href: "sms:720-484-0275"
+  }, "720-484-0275"))));
   var mobile = external_react_default.a.createElement("div", {
     style: {
       backgroundColor: "#00080e",
@@ -1306,11 +1310,15 @@ var external_react_resize_aware_default = /*#__PURE__*/__webpack_require__.n(ext
       fontSize: 17,
       marginTop: -2
     }
-  }, "adam@adammenges.com"), external_react_default.a.createElement("div", {
+  }, external_react_default.a.createElement("a", {
+    href: "mailto:adam@adammenges.com"
+  }, "adam@adammenges.com")), external_react_default.a.createElement("div", {
     style: {
       fontSize: 17
     }
-  }, "720-484-0275")));
+  }, external_react_default.a.createElement("a", {
+    href: "sms:720-484-0275"
+  }, "720-484-0275"))));
   return external_react_default.a.createElement("div", null, resizeListener, small ? mobile : desktop);
 });
 // CONCATENATED MODULE: /Users/adammenges/Development/adammengesWebsite/src/pages/index.js
@@ -2109,7 +2117,7 @@ module.exports = function (originalModule) {
 
 exports = module.exports = __webpack_require__(44)(false);
 // Module
-exports.push([module.i, "* {\n  scroll-behavior: smooth;\n}\n\nhtml {\n  background-color: #00080e;\n}\n\nbody {\n  font-family: \"Lato\", sans-serif;\n  font-weight: 300;\n  font-size: 16px;\n  color: rgb(190, 190, 190);\n  margin: 0;\n  padding: 0;\n}\n\n#headerBackground {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  height: 50%;\n  background-color: #00080e;\n}\n#footerBackground {\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  bottom: 0;\n  height: 50%;\n  background-color: #00080e;\n}\n\n.me-blend {\n  background-image: url(\"/me.jpg\");\n  background-size: 700px 700px;\n  width: 700px;\n  height: 700px;\n  background-color: #00080e;\n  background-repeat: no-repeat;\n  background-blend-mode: screen;\n}\n\n@media only screen and (max-width: 640px) {\n  .me-blend {\n    background-image: url(\"/me.jpg\");\n    background-size: 450px 450px;\n    width: 450px;\n    height: 450px;\n    background-color: #00080e;\n    background-repeat: no-repeat;\n    background-blend-mode: screen;\n  }\n}\n", ""]);
+exports.push([module.i, "* {\n  scroll-behavior: smooth;\n}\n\nhtml {\n  background-color: #00080e;\n}\n\nbody {\n  font-family: \"Lato\", sans-serif;\n  font-weight: 300;\n  font-size: 16px;\n  color: rgb(190, 190, 190);\n  margin: 0;\n  padding: 0;\n}\n\na {\n  font-family: \"Lato\", sans-serif;\n  color: rgb(190, 190, 190);\n  text-decoration: none;\n  font-weight: 300;\n  font-size: 16px;\n}\n\n#headerBackground {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  height: 50%;\n  background-color: #00080e;\n}\n#footerBackground {\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  bottom: 0;\n  height: 50%;\n  background-color: #00080e;\n}\n\n.me-blend {\n  background-image: url(\"/me.jpg\");\n  background-size: 700px 700px;\n  width: 700px;\n  height: 700px;\n  background-color: #00080e;\n  background-repeat: no-repeat;\n  background-blend-mode: screen;\n}\n\n@media only screen and (max-width: 640px) {\n  .me-blend {\n    background-image: url(\"/me.jpg\");\n    background-size: 450px 450px;\n    width: 450px;\n    height: 450px;\n    background-color: #00080e;\n    background-repeat: no-repeat;\n    background-blend-mode: screen;\n  }\n}\n", ""]);
 
 
 
