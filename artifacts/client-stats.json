@@ -2,27 +2,27 @@
   "errors": [],
   "warnings": [],
   "version": "4.30.0",
-  "hash": "0a871104ea2df654e135",
-  "time": 13022,
-  "builtAt": 1557521948035,
+  "hash": "2f1cb866e35248d8c524",
+  "time": 3245,
+  "builtAt": 1557523162429,
   "publicPath": "/",
   "outputPath": "/Users/adammenges/Development/adammengesWebsite/dist",
   "assetsByChunkName": {
-    "main": "main.0a871104.js",
+    "main": "main.2f1cb866.js",
     "src/containers/Post": "templates/src/containers/Post.5c793eba.js",
     "src/pages/404": "templates/src/pages/404.f13d9472.js",
     "src/pages/about": "templates/src/pages/about.2199a06c.js",
     "src/pages/blog": "templates/src/pages/blog.6ba97014.js",
     "src/pages/index": "templates/src/pages/index.3687a9fd.js",
     "styles": [
-      "styles.b4f1cecf.css",
-      "templates/styles.b4f1cecf.js"
+      "styles.d868ff4a.css",
+      "templates/styles.d868ff4a.js"
     ],
-    "vendors~main": "templates/vendors~main.3ebca083.js"
+    "vendors~main": "templates/vendors~main.b03a0900.js"
   },
   "assets": [
     {
-      "name": "main.0a871104.js",
+      "name": "main.2f1cb866.js",
       "size": 6551,
       "chunks": [
         0
@@ -33,7 +33,7 @@
       "emitted": true
     },
     {
-      "name": "styles.b4f1cecf.css",
+      "name": "styles.d868ff4a.css",
       "size": 672,
       "chunks": [
         6
@@ -99,7 +99,7 @@
       "emitted": true
     },
     {
-      "name": "templates/styles.b4f1cecf.js",
+      "name": "templates/styles.d868ff4a.js",
       "size": 82,
       "chunks": [
         6
@@ -110,8 +110,8 @@
       "emitted": true
     },
     {
-      "name": "templates/vendors~main.3ebca083.js",
-      "size": 236448,
+      "name": "templates/vendors~main.b03a0900.js",
+      "size": 236498,
       "chunks": [
         7
       ],
@@ -130,10 +130,10 @@
         0
       ],
       "assets": [
-        "styles.b4f1cecf.css",
-        "templates/styles.b4f1cecf.js",
-        "templates/vendors~main.3ebca083.js",
-        "main.0a871104.js"
+        "styles.d868ff4a.css",
+        "templates/styles.d868ff4a.js",
+        "templates/vendors~main.b03a0900.js",
+        "main.2f1cb866.js"
       ],
       "children": {},
       "childAssets": {}
@@ -147,10 +147,10 @@
         0
       ],
       "assets": [
-        "styles.b4f1cecf.css",
-        "templates/styles.b4f1cecf.js",
-        "templates/vendors~main.3ebca083.js",
-        "main.0a871104.js"
+        "styles.d868ff4a.css",
+        "templates/styles.d868ff4a.js",
+        "templates/vendors~main.b03a0900.js",
+        "main.2f1cb866.js"
       ],
       "children": {},
       "childAssets": {}
@@ -217,7 +217,7 @@
         "main"
       ],
       "files": [
-        "main.0a871104.js"
+        "main.2f1cb866.js"
       ],
       "hash": "2e941bd4cc339d664857",
       "siblings": [
@@ -1611,10 +1611,10 @@
         "styles"
       ],
       "files": [
-        "styles.b4f1cecf.css",
-        "templates/styles.b4f1cecf.js"
+        "styles.d868ff4a.css",
+        "templates/styles.d868ff4a.js"
       ],
-      "hash": "b4f1cecf8302e3b39cec",
+      "hash": "d868ff4a5580b141a974",
       "siblings": [
         0,
         7
@@ -1689,7 +1689,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1557521940276\n      var cssReload = require(\"/Users/adammenges/Development/adammengesWebsite/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
+          "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1557523160920\n      var cssReload = require(\"/Users/adammenges/Development/adammengesWebsite/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
         },
         {
           "id": "",
@@ -1777,9 +1777,9 @@
         "vendors~main"
       ],
       "files": [
-        "templates/vendors~main.3ebca083.js"
+        "templates/vendors~main.b03a0900.js"
       ],
-      "hash": "3ebca08355a04af19065",
+      "hash": "b03a090081df08c8642b",
       "siblings": [
         0,
         6
@@ -25358,7 +25358,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1557521940276\n      var cssReload = require(\"/Users/adammenges/Development/adammengesWebsite/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
+      "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1557523160920\n      var cssReload = require(\"/Users/adammenges/Development/adammengesWebsite/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
     },
     {
       "id": 136,
