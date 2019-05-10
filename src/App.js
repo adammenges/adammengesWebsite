@@ -12,6 +12,10 @@ addPrefetchExcludes(["dynamic"]);
 function App() {
   return (
     <Root>
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato"
+        rel="stylesheet"
+      />
       {/* <nav>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>

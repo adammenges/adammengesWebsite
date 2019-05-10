@@ -6390,7 +6390,7 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.8.2, react-dom@^16.8.6:
+react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
   integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
@@ -6435,6 +6435,11 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-resize-aware@3.0.0-beta.3:
+  version "3.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/react-resize-aware/-/react-resize-aware-3.0.0-beta.3.tgz#35aeddebfc4595f01323d0f473884099c4633f1b"
+  integrity sha512-XRnj1qgEAvrjOM7c/wsrVLBJxu0TNOKrhgWG7OasCdYiQSCyqiACxJUScTIknUk0bGV7MaagBjMa0CCYXK4ktQ==
+
 react-side-effect@^1.1.0:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.1.5.tgz#f26059e50ed9c626d91d661b9f3c8bb38cd0ff2d"
@@ -6443,17 +6448,17 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-static-plugin-reach-router@^7.0.0:
+react-static-plugin-reach-router@^7.0.10:
   version "7.0.10"
   resolved "https://registry.yarnpkg.com/react-static-plugin-reach-router/-/react-static-plugin-reach-router-7.0.10.tgz#0ebd8b914bbd4e3e4ca2b355ba6f837e9c6821a4"
   integrity sha512-EJBflq0t6c8ldiakLyRqaht8hXx4FFc+zKrsoeHnBWzSq9SfmDjC9tdEKSC8twkqC7ypY4QmqWAiQsF3U15/Cw==
 
-react-static-plugin-sitemap@^7.0.0:
+react-static-plugin-sitemap@^7.0.10:
   version "7.0.10"
   resolved "https://registry.yarnpkg.com/react-static-plugin-sitemap/-/react-static-plugin-sitemap-7.0.10.tgz#a7db197a5efe9a7ed085f290eca09f960b6906b9"
   integrity sha512-biaVICu7Jmu6qwXiW4cUZsSdLAT2N/YbggvKDYD7yEwZ+ShSQpTh95hYM3tKCCwOlGLXq1Mm/KNOPTEG0j0QlA==
 
-react-static-plugin-source-filesystem@^7.0.0:
+react-static-plugin-source-filesystem@^7.0.10:
   version "7.0.10"
   resolved "https://registry.yarnpkg.com/react-static-plugin-source-filesystem/-/react-static-plugin-source-filesystem-7.0.10.tgz#11fe5fd5803bed9f019829ced54c85f0ca1ee9b1"
   integrity sha512-b3D1Rk9KAIQoCwnPDz+96m7i48DfeUcfWd7MuVxK90/uhKttsOSrC+pwQ+aSUCwkS9RJgbKmZWWVv0YVlJJsng==
@@ -6461,7 +6466,7 @@ react-static-plugin-source-filesystem@^7.0.0:
     chokidar "^2.1.5"
     glob "^7.1.3"
 
-react-static@^7.0.0:
+react-static@^7.0.10:
   version "7.0.10"
   resolved "https://registry.yarnpkg.com/react-static/-/react-static-7.0.10.tgz#b08d583810c5bf7a2865ea647ea2ceec0eb8f993"
   integrity sha512-7sWx6IhWkUbKpVyCQdYjTcqbRQiR94OfQ0fbIXFpR/C2ujnMTK9xGyrlbmPPF7R5aRI1SQMhYNRqCknbI8FOlg==
@@ -6549,7 +6554,7 @@ react-universal-component@^4.0.0:
     prop-types "^15.5.10"
     react-hot-loader "^4.3.6"
 
-react@^16.8.2, react@^16.8.6:
+react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
@@ -6934,20 +6939,6 @@ serialize-javascript@^1.4.0:
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.7.0.tgz#d6e0dfb2a3832a8c94468e6eb1db97e55a192a65"
   integrity sha512-ke8UG8ulpFOxO8f8gRYabHQe/ZntKlcig2Mp+8+URDP1D8vJZ0KUt7LYo07q25Z/+JVSgpr/cui9PIp5H6/+nA==
 
-serve-handler@5.0.8:
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/serve-handler/-/serve-handler-5.0.8.tgz#790dbe340dabf1d61bdbaa02ea37dcab372377a8"
-  integrity sha512-pqk0SChbBLLHfMIxQ55czjdiW7tj2cFy53svvP8e5VqEN/uB/QpfiTJ8k1uIYeFTDVoi+FGi5aqXScuu88bymg==
-  dependencies:
-    bytes "3.0.0"
-    content-disposition "0.5.2"
-    fast-url-parser "1.1.3"
-    mime-types "2.1.18"
-    minimatch "3.0.4"
-    path-is-inside "1.0.2"
-    path-to-regexp "2.2.1"
-    range-parser "1.2.0"
-
 serve-handler@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/serve-handler/-/serve-handler-6.0.0.tgz#c6eaf6f89881adede09cd737b54e8b2eff4fd585"
@@ -6985,22 +6976,7 @@ serve-static@1.13.2:
     parseurl "~1.3.2"
     send "0.16.2"
 
-serve@10.1.2:
-  version "10.1.2"
-  resolved "https://registry.yarnpkg.com/serve/-/serve-10.1.2.tgz#805917f2692ed5d8720bbd1981ac3974d38b7d8d"
-  integrity sha512-TVH35uwndRlCqSeX3grR3Ntrjx2aBTeu6sx+zTD2CzN2N/rHuEDTvxiBwWbrellJNyWiQFz2xZmoW+UxV+Zahg==
-  dependencies:
-    "@zeit/schemas" "2.6.0"
-    ajv "6.5.3"
-    arg "2.0.0"
-    boxen "1.3.0"
-    chalk "2.4.1"
-    clipboardy "1.2.3"
-    compression "1.7.3"
-    serve-handler "5.0.8"
-    update-check "1.5.2"
-
-serve@^11.0.0:
+serve@11.0.0, serve@^11.0.0:
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/serve/-/serve-11.0.0.tgz#577f4e0f4b57058d12e3be19373f1a3d6d8826dc"
   integrity sha512-Gnyyp3JAtRUo0dRH1/YWPKbnaXHfzQBiVh9+qSUi6tyVcVA8twUP2c+GnOwsoe9Ss7dfOHJUTSA4fdWP//Y4gQ==
