@@ -3,7 +3,7 @@ import useResizeAware from "react-resize-aware";
 
 export default () => {
   const [resizeListener, sizes] = useResizeAware();
-  const mobile = sizes.width < 640;
+  const small = sizes.width < 640;
   const desktop = (
     <div
       style={{
@@ -17,7 +17,6 @@ export default () => {
         overflow: "hidden"
       }}
     >
-      {resizeListener}
       <div
         className="me-blend"
         style={{
@@ -58,7 +57,7 @@ export default () => {
       </div>
     </div>
   );
-  const iphone = (
+  const mobile = (
     <div
       style={{
         backgroundColor: "#00080e",
@@ -112,5 +111,10 @@ export default () => {
       </div>
     </div>
   );
-  return mobile ? iphone : desktop;
+  return (
+    <div>
+      {resizeListener}
+      {small ? mobile : desktop}
+    </div>
+  );
 };
