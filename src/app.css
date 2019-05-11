@@ -50,14 +50,12 @@ a {
   background-blend-mode: screen;
 }
 
-@media only screen and (max-width: 640px) {
-  .me-blend {
-    background-image: url("/me.jpg");
-    background-size: 450px 450px;
-    width: 450px;
-    height: 450px;
-    background-color: #00080e;
-    background-repeat: no-repeat;
-    background-blend-mode: screen;
-  }
+.me-blend-small {
+  background-image: url("/me.jpg");
+  background-size: 450px 450px;
+  width: 450px;
+  height: 450px;
+  background-color: #00080e;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
 }

@@ -3,17 +3,25 @@ import "./App.css";
 
 import { useState, useEffect } from "react";
 
-export const useWindowSize = () => {
+const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState(() => ({
-    width: window.innerWidth,
-    height: window.innerHeight
+    width: document.documentElement.clientWidth,
+    height: document.documentElement.clientHeight
   }));
 
   useEffect(() => {
-    const onResize = () =>
-      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+    const onResize = e => {
+      setWindowSize({
+        width: document.documentElement.clientWidth,
+        height: document.documentElement.clientHeight
+      });
+    };
     window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
+    window.addEventListener("orientationchange", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+      window.removeEventListener("orientationchange", onResize);
+    };
   });
 
   return windowSize;
@@ -24,13 +32,11 @@ const Header = () => {
   const small = size.width <= 640;
   const h = size.height;
   const w = size.width;
-  console.log("w: " + w);
 
   const desktop = (
     <div
       style={{
         backgroundColor: "#00080e",
-        // height: "100vh", // maybe do this with code?
         height: h,
         width: w,
         position: "relative",
@@ -88,7 +94,7 @@ const Header = () => {
       }}
     >
       <div
-        className="me-blend"
+        className="me-blend-small"
         style={{
           position: "absolute",
           left: w / 2 - 225,
@@ -127,7 +133,6 @@ const Header = () => {
       </div>
     </div>
   );
-  console.log(small);
   return <div style={{ position: "relative" }}>{small ? mobile : desktop}</div>;
 };
 
