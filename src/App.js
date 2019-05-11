@@ -1,39 +1,138 @@
 import React from "react";
-import { Root, Routes, addPrefetchExcludes } from "react-static";
-//
-import { Link, Router } from "components/Router";
-import Dynamic from "containers/Dynamic";
+import "./App.css";
 
-import "./app.css";
+import { useState, useEffect } from "react";
 
-// Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(["dynamic"]);
+export const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState(() => ({
+    width: window.innerWidth,
+    height: window.innerHeight
+  }));
+
+  useEffect(() => {
+    const onResize = () =>
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  });
+
+  return windowSize;
+};
+
+const Header = () => {
+  const size = useWindowSize();
+  const small = size.width <= 640;
+  const h = size.height;
+  const w = size.width;
+  console.log("w: " + w);
+
+  const desktop = (
+    <div
+      style={{
+        backgroundColor: "#00080e",
+        // height: "100vh", // maybe do this with code?
+        height: h,
+        width: w,
+        position: "relative",
+        overflow: "hidden"
+      }}
+    >
+      <div
+        className="me-blend"
+        style={{
+          position: "absolute",
+          left: w / 2 - 200,
+          top: h / 2 - 320
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          left: w / 2 - 300,
+          top: h / 2 - 50 // size of div
+        }}
+      >
+        <div
+          style={{
+            fontSize: 37
+          }}
+        >
+          Adam Menges
+        </div>
+        <div
+          style={{
+            fontSize: 17,
+            marginTop: -2
+          }}
+        >
+          <a href="mailto:adam@adammenges.com">adam@adammenges.com</a>
+        </div>
+        <div
+          style={{
+            fontSize: 17
+          }}
+        >
+          <a href="sms:720-484-0275">720-484-0275</a>
+        </div>
+      </div>
+    </div>
+  );
+  const mobile = (
+    <div
+      style={{
+        backgroundColor: "#00080e",
+        height: h,
+        width: w,
+        position: "relative",
+        overflow: "hidden"
+      }}
+    >
+      <div
+        className="me-blend"
+        style={{
+          position: "absolute",
+          left: w / 2 - 225,
+          top: h / 2 - 225 - 50
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          left: w / 2 - 110,
+          top: h / 2 + 125
+        }}
+      >
+        <div
+          style={{
+            fontSize: 37
+          }}
+        >
+          Adam Menges
+        </div>
+        <div
+          style={{
+            fontSize: 17,
+            marginTop: -2
+          }}
+        >
+          <a href="mailto:adam@adammenges.com">adam@adammenges.com</a>
+        </div>
+        <div
+          style={{
+            fontSize: 17
+          }}
+        >
+          <a href="sms:720-484-0275">720-484-0275</a>
+        </div>
+      </div>
+    </div>
+  );
+  console.log(small);
+  return <div style={{ position: "relative" }}>{small ? mobile : desktop}</div>;
+};
 
 function App() {
-  return (
-    <Root>
-      <link
-        href="https://fonts.googleapis.com/css?family=Lato"
-        rel="stylesheet"
-      />
-      {/* <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/dynamic">Dynamic</Link>
-      </nav> */}
-      <div id="footerBackground" />
-      <div id="headerBackground" />
-      <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            <Dynamic path="dynamic" />
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
-      </div>
-    </Root>
-  );
+  return <div className="App">{Header()}</div>;
 }
 
 export default App;
