@@ -2,27 +2,27 @@
   "errors": [],
   "warnings": [],
   "version": "4.30.0",
-  "hash": "b84a0eecb2c822890a97",
-  "time": 4093,
-  "builtAt": 1557524023617,
+  "hash": "a4d3afb956ce596b70d7",
+  "time": 4057,
+  "builtAt": 1557550187335,
   "publicPath": "/",
   "outputPath": "/Users/adammenges/Development/adammengesWebsite/dist",
   "assetsByChunkName": {
-    "main": "main.b84a0eec.js",
+    "main": "main.a4d3afb9.js",
     "src/containers/Post": "templates/src/containers/Post.5c793eba.js",
     "src/pages/404": "templates/src/pages/404.f13d9472.js",
     "src/pages/about": "templates/src/pages/about.2199a06c.js",
     "src/pages/blog": "templates/src/pages/blog.6ba97014.js",
-    "src/pages/index": "templates/src/pages/index.c51aa4d8.js",
+    "src/pages/index": "templates/src/pages/index.5efa9c0c.js",
     "styles": [
-      "styles.407709eb.css",
-      "templates/styles.407709eb.js"
+      "styles.b54f3359.css",
+      "templates/styles.b54f3359.js"
     ],
     "vendors~main": "templates/vendors~main.b03a0900.js"
   },
   "assets": [
     {
-      "name": "main.b84a0eec.js",
+      "name": "main.a4d3afb9.js",
       "size": 6551,
       "chunks": [
         0
@@ -33,7 +33,7 @@
       "emitted": true
     },
     {
-      "name": "styles.407709eb.css",
+      "name": "styles.b54f3359.css",
       "size": 702,
       "chunks": [
         6
@@ -88,8 +88,8 @@
       "emitted": true
     },
     {
-      "name": "templates/src/pages/index.c51aa4d8.js",
-      "size": 2576,
+      "name": "templates/src/pages/index.5efa9c0c.js",
+      "size": 2113,
       "chunks": [
         5
       ],
@@ -99,7 +99,7 @@
       "emitted": true
     },
     {
-      "name": "templates/styles.407709eb.js",
+      "name": "templates/styles.b54f3359.js",
       "size": 82,
       "chunks": [
         6
@@ -130,10 +130,10 @@
         0
       ],
       "assets": [
-        "styles.407709eb.css",
-        "templates/styles.407709eb.js",
+        "styles.b54f3359.css",
+        "templates/styles.b54f3359.js",
         "templates/vendors~main.b03a0900.js",
-        "main.b84a0eec.js"
+        "main.a4d3afb9.js"
       ],
       "children": {},
       "childAssets": {}
@@ -147,10 +147,10 @@
         0
       ],
       "assets": [
-        "styles.407709eb.css",
-        "templates/styles.407709eb.js",
+        "styles.b54f3359.css",
+        "templates/styles.b54f3359.js",
         "templates/vendors~main.b03a0900.js",
-        "main.b84a0eec.js"
+        "main.a4d3afb9.js"
       ],
       "children": {},
       "childAssets": {}
@@ -190,7 +190,7 @@
         5
       ],
       "assets": [
-        "templates/src/pages/index.c51aa4d8.js"
+        "templates/src/pages/index.5efa9c0c.js"
       ],
       "children": {},
       "childAssets": {}
@@ -217,9 +217,9 @@
         "main"
       ],
       "files": [
-        "main.b84a0eec.js"
+        "main.a4d3afb9.js"
       ],
-      "hash": "cba2edc86ceea7e98a3e",
+      "hash": "450bd0dde0fe608919ad",
       "siblings": [
         6,
         7
@@ -903,8 +903,8 @@
           "id": 52,
           "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/containers/Post.js",
           "name": "/Users/adammenges/Development/adammengesWebsite/src/containers/Post.js",
-          "index": 144,
-          "index2": 144,
+          "index": 143,
+          "index2": 143,
           "size": 396,
           "cacheable": true,
           "built": true,
@@ -1298,14 +1298,14 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 3508,
+      "size": 2999,
       "names": [
         "src/pages/index"
       ],
       "files": [
-        "templates/src/pages/index.c51aa4d8.js"
+        "templates/src/pages/index.5efa9c0c.js"
       ],
-      "hash": "c51aa4d81b475530f393",
+      "hash": "5efa9c0cbbe5c23c8dfb",
       "siblings": [],
       "parents": [
         0,
@@ -1320,8 +1320,8 @@
           "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
           "name": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "index": 141,
-          "index2": 143,
-          "size": 2208,
+          "index2": 142,
+          "size": 2999,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1363,7 +1363,6 @@
           ],
           "optimizationBailout": [
             "ModuleConcatenation bailout: Cannot concat with /Users/adammenges/Development/adammengesWebsite/node_modules/@babel/runtime/helpers/slicedToArray.js (<- Module is not an ECMAScript module)",
-            "ModuleConcatenation bailout: Cannot concat with /Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js (<- Module is not an ECMAScript module)",
             "ModuleConcatenation bailout: Cannot concat with /Users/adammenges/Development/adammengesWebsite/node_modules/react/index.js (<- Module is not an ECMAScript module)"
           ],
           "depth": 3,
@@ -1373,7 +1372,7 @@
               "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js",
               "name": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js",
               "index": 141,
-              "index2": 143,
+              "index2": 142,
               "size": 187,
               "cacheable": true,
               "built": true,
@@ -1439,8 +1438,8 @@
               "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
               "name": "/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
               "index": 142,
-              "index2": 142,
-              "size": 2006,
+              "index2": 141,
+              "size": 2802,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -1503,88 +1502,10 @@
               ],
               "optimizationBailout": [],
               "depth": 4,
-              "source": "import _slicedToArray from\"@babel/runtime/helpers/slicedToArray\";import React from\"react\";import useResizeAware from\"react-resize-aware\";export default(function(){var _useResizeAware=useResizeAware(),_useResizeAware2=_slicedToArray(_useResizeAware,2),resizeListener=_useResizeAware2[0],sizes=_useResizeAware2[1];var small=sizes.width<640;var desktop=React.createElement(\"div\",{style:{backgroundColor:\"#00080e\",height:\"100vh\",// maybe do this with code?\n// height: sizes.height,\n// width: sizes.width,\nposition:\"relative\",// left: 0,\n// top: 0\noverflow:\"hidden\"}},React.createElement(\"div\",{className:\"me-blend\",style:{position:\"absolute\",left:sizes.width/2-350+150,top:sizes.height/2-350+30}}),React.createElement(\"div\",{style:{position:\"absolute\",left:sizes.width/2-300,top:sizes.height/2-50// size of div\n}},React.createElement(\"div\",{style:{fontSize:37}},\"Adam Menges\"),React.createElement(\"div\",{style:{fontSize:17,marginTop:-2}},React.createElement(\"a\",{href:\"mailto:adam@adammenges.com\"},\"adam@adammenges.com\")),React.createElement(\"div\",{style:{fontSize:17}},React.createElement(\"a\",{href:\"sms:720-484-0275\"},\"720-484-0275\"))));var mobile=React.createElement(\"div\",{style:{backgroundColor:\"#00080e\",height:\"100vh\",// maybe do this with code?\n// height: sizes.height,\n// width: sizes.width,\nposition:\"relative\",// left: 0,\n// top: 0\noverflow:\"hidden\"}},resizeListener,React.createElement(\"div\",{className:\"me-blend\",style:{position:\"absolute\",left:sizes.width/2-225,top:sizes.height/2-225-75}}),React.createElement(\"div\",{style:{position:\"absolute\",left:sizes.width/2-110,top:sizes.height/2+125}},React.createElement(\"div\",{style:{fontSize:37}},\"Adam Menges\"),React.createElement(\"div\",{style:{fontSize:17,marginTop:-2}},React.createElement(\"a\",{href:\"mailto:adam@adammenges.com\"},\"adam@adammenges.com\")),React.createElement(\"div\",{style:{fontSize:17}},React.createElement(\"a\",{href:\"sms:720-484-0275\"},\"720-484-0275\"))));return React.createElement(\"div\",null,resizeListener,small?mobile:desktop);});"
+              "source": "import _slicedToArray from\"@babel/runtime/helpers/slicedToArray\";import React from\"react\";// import useResizeAware from \"react-resize-aware\";\n// import { useWindowSize } from \"react-hooks-window-size\";\nimport{useState,useEffect}from\"react\";var useWindowSize=function useWindowSize(){var _useState=useState(function(){if(typeof window!==\"undefined\"){return{width:window.innerWidth,height:window.innerHeight};}}),_useState2=_slicedToArray(_useState,2),windowSize=_useState2[0],setWindowSize=_useState2[1];useEffect(function(){if(typeof window!==\"undefined\"){var onResize=function onResize(){return setWindowSize({width:window.innerWidth,height:window.innerHeight});};window.addEventListener(\"resize\",onResize);return function(){return window.removeEventListener(\"resize\",onResize);};}});return windowSize;};export default(function(){// const [resizeListener, sizes] = useResizeAware();\nvar size=useWindowSize();// React.useEffect(() => {\n//   console.log(\"size.width \" + size.width);\n//   console.log(\"size.height \" + size.height);\n// }, [size.width, size.height]);\nvar small=false;var h=\"100vh\";var w=\"100vw\";if(typeof window!==\"undefined\"){small=size.width<640;h=window.innerHeight;w=window.innerWidth;if(size.height){h=size.height;}if(size.width){w=size.width;}}var desktop=React.createElement(\"div\",{style:{backgroundColor:\"#00080e\",// height: \"100vh\", // maybe do this with code?\nheight:h,width:w,position:\"relative\",// left: 0,\n// top: 0\noverflow:\"hidden\"}},React.createElement(\"div\",{className:\"me-blend\",style:{position:\"absolute\",left:w/2-200,top:h/2-320}}),React.createElement(\"div\",{style:{position:\"absolute\",left:w/2-300,top:h/2-50// size of div\n}},React.createElement(\"div\",{style:{fontSize:37}},\"Adam Menges\"),React.createElement(\"div\",{style:{fontSize:17,marginTop:-2}},React.createElement(\"a\",{href:\"mailto:adam@adammenges.com\"},\"adam@adammenges.com\")),React.createElement(\"div\",{style:{fontSize:17}},React.createElement(\"a\",{href:\"sms:720-484-0275\"},\"720-484-0275\"))));var mobile=React.createElement(\"div\",{style:{backgroundColor:\"#00080e\",// height: \"100vh\", // maybe do this with code?\nheight:h,width:w,position:\"relative\",// left: 0,\n// top: 0\noverflow:\"hidden\"}},React.createElement(\"div\",{className:\"me-blend\",style:{position:\"absolute\",left:w/2-225,top:h/2-225-75}}),React.createElement(\"div\",{style:{position:\"absolute\",left:w/2-110,top:h/2+125}},React.createElement(\"div\",{style:{fontSize:37}},\"Adam Menges\"),React.createElement(\"div\",{style:{fontSize:17,marginTop:-2}},React.createElement(\"a\",{href:\"mailto:adam@adammenges.com\"},\"adam@adammenges.com\")),React.createElement(\"div\",{style:{fontSize:17}},React.createElement(\"a\",{href:\"sms:720-484-0275\"},\"720-484-0275\"))));console.log(small);return React.createElement(\"div\",{style:{position:\"relative\"}},small?mobile:desktop);});"
             }
           ],
           "filteredModules": 0
-        },
-        {
-          "id": 137,
-          "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-1-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-          "name": "/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-          "index": 143,
-          "index2": 141,
-          "size": 1300,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            5
-          ],
-          "issuer": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
-          "issuerId": null,
-          "issuerName": "/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
-          "issuerPath": [
-            {
-              "id": 54,
-              "identifier": "multi /Users/adammenges/Development/adammengesWebsite/node_modules/react-static/lib/bootstrapPlugins.js /Users/adammenges/Development/adammengesWebsite/node_modules/react-static/lib/bootstrapTemplates.js /Users/adammenges/Development/adammengesWebsite/node_modules/react-static/lib/bootstrapApp.js",
-              "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
-            },
-            {
-              "id": 118,
-              "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-1-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/node_modules/react-static/lib/bootstrapTemplates.js",
-              "name": "../lib/bootstrapTemplates.js"
-            },
-            {
-              "id": 44,
-              "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/artifacts/react-static-templates.js",
-              "name": "/Users/adammenges/Development/adammengesWebsite/artifacts/react-static-templates.js"
-            },
-            {
-              "id": null,
-              "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js",
-              "name": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js"
-            },
-            {
-              "id": null,
-              "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
-              "name": "/Users/adammenges/Development/adammengesWebsite/src/components/Header.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": 53,
-              "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
-              "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-              "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-              "type": "harmony side effect evaluation",
-              "userRequest": "react-resize-aware",
-              "loc": "1:90-137"
-            },
-            {
-              "moduleId": 53,
-              "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
-              "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-              "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-              "type": "harmony import specifier",
-              "userRequest": "react-resize-aware",
-              "loc": "1:183-197"
-            }
-          ],
-          "usedExports": [
-            "default"
-          ],
-          "providedExports": null,
-          "optimizationBailout": [
-            "ModuleConcatenation bailout: Module is not an ECMAScript module"
-          ],
-          "depth": 5,
-          "source": "var e = require(\"react\"),\n    t = {\n  display: \"block\",\n  opacity: 0,\n  position: \"absolute\",\n  top: 0,\n  left: 0,\n  height: \"100%\",\n  width: \"100%\",\n  overflow: \"hidden\",\n  pointerEvents: \"none\",\n  zIndex: -1\n},\n    n = function n(_n) {\n  var r = _n.onResize,\n      i = e.useRef();\n  return function (t, n) {\n    e.useEffect(function () {\n      var e = t.current && t.current.contentDocument.defaultView;\n      return n(), e && e.addEventListener(\"resize\", n), function () {\n        e && \"function\" == typeof e.removeEventListener && e.removeEventListener(\"resize\", n);\n      };\n    }, []);\n  }(i, function () {\n    return r(i);\n  }), e.createElement(\"object\", {\n    type: \"text/html\",\n    style: t,\n    data: \"about:blank\",\n    ref: i,\n    \"aria-hidden\": !0,\n    \"aria-label\": \"resize-listener\",\n    tabIndex: -1\n  });\n},\n    r = function r(e) {\n  return {\n    width: null != e ? e.offsetWidth : null,\n    height: null != e ? e.offsetHeight : null\n  };\n};\n\nmodule.exports = function (t) {\n  void 0 === t && (t = r);\n  var i = e.useState({\n    width: null,\n    height: null\n  }),\n      u = i[0],\n      o = i[1],\n      l = e.useCallback(function (e) {\n    return o(t(e.current));\n  }, [t]);\n  return [e.useMemo(function () {\n    return e.createElement(n, {\n      onResize: l\n    });\n  }, [l]), u];\n};"
         }
       ],
       "filteredModules": 0,
@@ -1611,10 +1532,10 @@
         "styles"
       ],
       "files": [
-        "styles.407709eb.css",
-        "templates/styles.407709eb.js"
+        "styles.b54f3359.css",
+        "templates/styles.b54f3359.js"
       ],
-      "hash": "407709eb1732a5abd983",
+      "hash": "b54f335982d80b09ff08",
       "siblings": [
         0,
         7
@@ -1689,7 +1610,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1557524021534\n      var cssReload = require(\"/Users/adammenges/Development/adammengesWebsite/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
+          "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1557550185441\n      var cssReload = require(\"/Users/adammenges/Development/adammengesWebsite/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
         },
         {
           "id": "",
@@ -2528,15 +2449,6 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "1:350-355"
-            },
-            {
-              "moduleId": 53,
-              "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
-              "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-              "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-              "type": "harmony import specifier",
-              "userRequest": "react",
               "loc": "2:7-12"
             },
             {
@@ -2553,9 +2465,9 @@
               "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
               "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-              "type": "harmony import specifier",
+              "type": "harmony side effect evaluation",
               "userRequest": "react",
-              "loc": "6:20-25"
+              "loc": "3:0-38"
             },
             {
               "moduleId": 53,
@@ -2564,7 +2476,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "6:151-156"
+              "loc": "3:95-103"
             },
             {
               "moduleId": 53,
@@ -2573,7 +2485,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:3-8"
+              "loc": "3:301-310"
             },
             {
               "moduleId": 53,
@@ -2582,7 +2494,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:66-71"
+              "loc": "8:211-216"
             },
             {
               "moduleId": 53,
@@ -2591,7 +2503,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:127-132"
+              "loc": "11:20-25"
             },
             {
               "moduleId": 53,
@@ -2600,7 +2512,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:211-216"
+              "loc": "11:123-128"
             },
             {
               "moduleId": 53,
@@ -2609,7 +2521,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:259-264"
+              "loc": "12:3-8"
             },
             {
               "moduleId": 53,
@@ -2618,7 +2530,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "7:339-344"
+              "loc": "12:66-71"
             },
             {
               "moduleId": 53,
@@ -2627,7 +2539,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:35-40"
+              "loc": "12:127-132"
             },
             {
               "moduleId": 53,
@@ -2636,7 +2548,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:162-167"
+              "loc": "12:211-216"
             },
             {
               "moduleId": 53,
@@ -2645,7 +2557,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:264-269"
+              "loc": "12:259-264"
             },
             {
               "moduleId": 53,
@@ -2654,7 +2566,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:327-332"
+              "loc": "12:339-344"
             },
             {
               "moduleId": 53,
@@ -2663,7 +2575,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:388-393"
+              "loc": "15:20-25"
             },
             {
               "moduleId": 53,
@@ -2672,7 +2584,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:472-477"
+              "loc": "15:126-131"
             },
             {
               "moduleId": 53,
@@ -2681,7 +2593,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:520-525"
+              "loc": "15:207-212"
             },
             {
               "moduleId": 53,
@@ -2690,7 +2602,43 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "12:596-601"
+              "loc": "15:270-275"
+            },
+            {
+              "moduleId": 53,
+              "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
+              "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+              "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "15:331-336"
+            },
+            {
+              "moduleId": 53,
+              "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
+              "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+              "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "15:415-420"
+            },
+            {
+              "moduleId": 53,
+              "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
+              "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+              "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "15:463-468"
+            },
+            {
+              "moduleId": 53,
+              "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
+              "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+              "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "15:558-563"
             },
             {
               "moduleId": 57,
@@ -2862,15 +2810,6 @@
               "type": "cjs require",
               "userRequest": "react",
               "loc": "13:28-44"
-            },
-            {
-              "moduleId": 137,
-              "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-1-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-              "module": "/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-              "moduleName": "/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-              "type": "cjs require",
-              "userRequest": "react",
-              "loc": "1:8-24"
             }
           ],
           "usedExports": true,
@@ -4128,7 +4067,7 @@
               "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
               "type": "harmony import specifier",
               "userRequest": "@babel/runtime/helpers/slicedToArray",
-              "loc": "1:217-231"
+              "loc": "3:220-234"
             },
             {
               "moduleId": 67,
@@ -13807,15 +13746,6 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "1:350-355"
-        },
-        {
-          "moduleId": 53,
-          "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
-          "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-          "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-          "type": "harmony import specifier",
-          "userRequest": "react",
           "loc": "2:7-12"
         },
         {
@@ -13832,9 +13762,9 @@
           "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
           "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-          "type": "harmony import specifier",
+          "type": "harmony side effect evaluation",
           "userRequest": "react",
-          "loc": "6:20-25"
+          "loc": "3:0-38"
         },
         {
           "moduleId": 53,
@@ -13843,7 +13773,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "6:151-156"
+          "loc": "3:95-103"
         },
         {
           "moduleId": 53,
@@ -13852,7 +13782,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "7:3-8"
+          "loc": "3:301-310"
         },
         {
           "moduleId": 53,
@@ -13861,7 +13791,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "7:66-71"
+          "loc": "8:211-216"
         },
         {
           "moduleId": 53,
@@ -13870,7 +13800,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "7:127-132"
+          "loc": "11:20-25"
         },
         {
           "moduleId": 53,
@@ -13879,7 +13809,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "7:211-216"
+          "loc": "11:123-128"
         },
         {
           "moduleId": 53,
@@ -13888,7 +13818,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "7:259-264"
+          "loc": "12:3-8"
         },
         {
           "moduleId": 53,
@@ -13897,7 +13827,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "7:339-344"
+          "loc": "12:66-71"
         },
         {
           "moduleId": 53,
@@ -13906,7 +13836,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "12:35-40"
+          "loc": "12:127-132"
         },
         {
           "moduleId": 53,
@@ -13915,7 +13845,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "12:162-167"
+          "loc": "12:211-216"
         },
         {
           "moduleId": 53,
@@ -13924,7 +13854,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "12:264-269"
+          "loc": "12:259-264"
         },
         {
           "moduleId": 53,
@@ -13933,7 +13863,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "12:327-332"
+          "loc": "12:339-344"
         },
         {
           "moduleId": 53,
@@ -13942,7 +13872,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "12:388-393"
+          "loc": "15:20-25"
         },
         {
           "moduleId": 53,
@@ -13951,7 +13881,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "12:472-477"
+          "loc": "15:126-131"
         },
         {
           "moduleId": 53,
@@ -13960,7 +13890,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "12:520-525"
+          "loc": "15:207-212"
         },
         {
           "moduleId": 53,
@@ -13969,7 +13899,43 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "12:596-601"
+          "loc": "15:270-275"
+        },
+        {
+          "moduleId": 53,
+          "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
+          "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+          "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "15:331-336"
+        },
+        {
+          "moduleId": 53,
+          "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
+          "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+          "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "15:415-420"
+        },
+        {
+          "moduleId": 53,
+          "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
+          "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+          "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "15:463-468"
+        },
+        {
+          "moduleId": 53,
+          "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
+          "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+          "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "15:558-563"
         },
         {
           "moduleId": 57,
@@ -14141,15 +14107,6 @@
           "type": "cjs require",
           "userRequest": "react",
           "loc": "13:28-44"
-        },
-        {
-          "moduleId": 137,
-          "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-1-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-          "module": "/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-          "moduleName": "/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-          "type": "cjs require",
-          "userRequest": "react",
-          "loc": "1:8-24"
         }
       ],
       "usedExports": true,
@@ -15407,7 +15364,7 @@
           "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
           "type": "harmony import specifier",
           "userRequest": "@babel/runtime/helpers/slicedToArray",
-          "loc": "1:217-231"
+          "loc": "3:220-234"
         },
         {
           "moduleId": 67,
@@ -19603,8 +19560,8 @@
       "id": 52,
       "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/containers/Post.js",
       "name": "/Users/adammenges/Development/adammengesWebsite/src/containers/Post.js",
-      "index": 144,
-      "index2": 144,
+      "index": 143,
+      "index2": 143,
       "size": 396,
       "cacheable": true,
       "built": true,
@@ -19672,8 +19629,8 @@
       "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
       "name": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
       "index": 141,
-      "index2": 143,
-      "size": 2208,
+      "index2": 142,
+      "size": 2999,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -19715,7 +19672,6 @@
       ],
       "optimizationBailout": [
         "ModuleConcatenation bailout: Cannot concat with /Users/adammenges/Development/adammengesWebsite/node_modules/@babel/runtime/helpers/slicedToArray.js (<- Module is not an ECMAScript module)",
-        "ModuleConcatenation bailout: Cannot concat with /Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js (<- Module is not an ECMAScript module)",
         "ModuleConcatenation bailout: Cannot concat with /Users/adammenges/Development/adammengesWebsite/node_modules/react/index.js (<- Module is not an ECMAScript module)"
       ],
       "depth": 3,
@@ -19725,7 +19681,7 @@
           "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js",
           "name": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js",
           "index": 141,
-          "index2": 143,
+          "index2": 142,
           "size": 187,
           "cacheable": true,
           "built": true,
@@ -19791,8 +19747,8 @@
           "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
           "name": "/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
           "index": 142,
-          "index2": 142,
-          "size": 2006,
+          "index2": 141,
+          "size": 2802,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -19855,7 +19811,7 @@
           ],
           "optimizationBailout": [],
           "depth": 4,
-          "source": "import _slicedToArray from\"@babel/runtime/helpers/slicedToArray\";import React from\"react\";import useResizeAware from\"react-resize-aware\";export default(function(){var _useResizeAware=useResizeAware(),_useResizeAware2=_slicedToArray(_useResizeAware,2),resizeListener=_useResizeAware2[0],sizes=_useResizeAware2[1];var small=sizes.width<640;var desktop=React.createElement(\"div\",{style:{backgroundColor:\"#00080e\",height:\"100vh\",// maybe do this with code?\n// height: sizes.height,\n// width: sizes.width,\nposition:\"relative\",// left: 0,\n// top: 0\noverflow:\"hidden\"}},React.createElement(\"div\",{className:\"me-blend\",style:{position:\"absolute\",left:sizes.width/2-350+150,top:sizes.height/2-350+30}}),React.createElement(\"div\",{style:{position:\"absolute\",left:sizes.width/2-300,top:sizes.height/2-50// size of div\n}},React.createElement(\"div\",{style:{fontSize:37}},\"Adam Menges\"),React.createElement(\"div\",{style:{fontSize:17,marginTop:-2}},React.createElement(\"a\",{href:\"mailto:adam@adammenges.com\"},\"adam@adammenges.com\")),React.createElement(\"div\",{style:{fontSize:17}},React.createElement(\"a\",{href:\"sms:720-484-0275\"},\"720-484-0275\"))));var mobile=React.createElement(\"div\",{style:{backgroundColor:\"#00080e\",height:\"100vh\",// maybe do this with code?\n// height: sizes.height,\n// width: sizes.width,\nposition:\"relative\",// left: 0,\n// top: 0\noverflow:\"hidden\"}},resizeListener,React.createElement(\"div\",{className:\"me-blend\",style:{position:\"absolute\",left:sizes.width/2-225,top:sizes.height/2-225-75}}),React.createElement(\"div\",{style:{position:\"absolute\",left:sizes.width/2-110,top:sizes.height/2+125}},React.createElement(\"div\",{style:{fontSize:37}},\"Adam Menges\"),React.createElement(\"div\",{style:{fontSize:17,marginTop:-2}},React.createElement(\"a\",{href:\"mailto:adam@adammenges.com\"},\"adam@adammenges.com\")),React.createElement(\"div\",{style:{fontSize:17}},React.createElement(\"a\",{href:\"sms:720-484-0275\"},\"720-484-0275\"))));return React.createElement(\"div\",null,resizeListener,small?mobile:desktop);});"
+          "source": "import _slicedToArray from\"@babel/runtime/helpers/slicedToArray\";import React from\"react\";// import useResizeAware from \"react-resize-aware\";\n// import { useWindowSize } from \"react-hooks-window-size\";\nimport{useState,useEffect}from\"react\";var useWindowSize=function useWindowSize(){var _useState=useState(function(){if(typeof window!==\"undefined\"){return{width:window.innerWidth,height:window.innerHeight};}}),_useState2=_slicedToArray(_useState,2),windowSize=_useState2[0],setWindowSize=_useState2[1];useEffect(function(){if(typeof window!==\"undefined\"){var onResize=function onResize(){return setWindowSize({width:window.innerWidth,height:window.innerHeight});};window.addEventListener(\"resize\",onResize);return function(){return window.removeEventListener(\"resize\",onResize);};}});return windowSize;};export default(function(){// const [resizeListener, sizes] = useResizeAware();\nvar size=useWindowSize();// React.useEffect(() => {\n//   console.log(\"size.width \" + size.width);\n//   console.log(\"size.height \" + size.height);\n// }, [size.width, size.height]);\nvar small=false;var h=\"100vh\";var w=\"100vw\";if(typeof window!==\"undefined\"){small=size.width<640;h=window.innerHeight;w=window.innerWidth;if(size.height){h=size.height;}if(size.width){w=size.width;}}var desktop=React.createElement(\"div\",{style:{backgroundColor:\"#00080e\",// height: \"100vh\", // maybe do this with code?\nheight:h,width:w,position:\"relative\",// left: 0,\n// top: 0\noverflow:\"hidden\"}},React.createElement(\"div\",{className:\"me-blend\",style:{position:\"absolute\",left:w/2-200,top:h/2-320}}),React.createElement(\"div\",{style:{position:\"absolute\",left:w/2-300,top:h/2-50// size of div\n}},React.createElement(\"div\",{style:{fontSize:37}},\"Adam Menges\"),React.createElement(\"div\",{style:{fontSize:17,marginTop:-2}},React.createElement(\"a\",{href:\"mailto:adam@adammenges.com\"},\"adam@adammenges.com\")),React.createElement(\"div\",{style:{fontSize:17}},React.createElement(\"a\",{href:\"sms:720-484-0275\"},\"720-484-0275\"))));var mobile=React.createElement(\"div\",{style:{backgroundColor:\"#00080e\",// height: \"100vh\", // maybe do this with code?\nheight:h,width:w,position:\"relative\",// left: 0,\n// top: 0\noverflow:\"hidden\"}},React.createElement(\"div\",{className:\"me-blend\",style:{position:\"absolute\",left:w/2-225,top:h/2-225-75}}),React.createElement(\"div\",{style:{position:\"absolute\",left:w/2-110,top:h/2+125}},React.createElement(\"div\",{style:{fontSize:37}},\"Adam Menges\"),React.createElement(\"div\",{style:{fontSize:17,marginTop:-2}},React.createElement(\"a\",{href:\"mailto:adam@adammenges.com\"},\"adam@adammenges.com\")),React.createElement(\"div\",{style:{fontSize:17}},React.createElement(\"a\",{href:\"sms:720-484-0275\"},\"720-484-0275\"))));console.log(small);return React.createElement(\"div\",{style:{position:\"relative\"}},small?mobile:desktop);});"
         }
       ],
       "filteredModules": 0
@@ -25430,7 +25386,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1557524021534\n      var cssReload = require(\"/Users/adammenges/Development/adammengesWebsite/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
+      "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1557550185441\n      var cssReload = require(\"/Users/adammenges/Development/adammengesWebsite/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
     },
     {
       "id": 136,
@@ -25493,84 +25449,6 @@
       ],
       "depth": 4,
       "source": "\"use strict\";\n\nvar _typeof = require(\"@babel/runtime/helpers/typeof\");\n\nfunction _interopDefault(e) {\n  return e && \"object\" == _typeof(e) && \"default\" in e ? e[\"default\"] : e;\n}\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: !0\n});\n\nvar React = _interopDefault(require(\"react\"));\n\nfunction AppContainer(e) {\n  return React.Children.only(e.children);\n}\n\nvar hot_prod = function hot_prod() {\n  return function (e) {\n    return e;\n  };\n},\n    areComponentsEqual = function areComponentsEqual(e, n) {\n  return e === n;\n},\n    setConfig = function setConfig() {},\n    cold = function cold(e) {\n  return e;\n},\n    configureComponent = function configureComponent() {};\n\nexports.AppContainer = AppContainer, exports.hot = hot_prod, exports.areComponentsEqual = areComponentsEqual, exports.setConfig = setConfig, exports.cold = cold, exports.configureComponent = configureComponent;"
-    },
-    {
-      "id": 137,
-      "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-1-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-      "name": "/Users/adammenges/Development/adammengesWebsite/node_modules/react-resize-aware/dist/index.js",
-      "index": 143,
-      "index2": 141,
-      "size": 1300,
-      "cacheable": true,
-      "built": true,
-      "optional": false,
-      "prefetched": false,
-      "chunks": [
-        5
-      ],
-      "issuer": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
-      "issuerId": null,
-      "issuerName": "/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
-      "issuerPath": [
-        {
-          "id": 54,
-          "identifier": "multi /Users/adammenges/Development/adammengesWebsite/node_modules/react-static/lib/bootstrapPlugins.js /Users/adammenges/Development/adammengesWebsite/node_modules/react-static/lib/bootstrapTemplates.js /Users/adammenges/Development/adammengesWebsite/node_modules/react-static/lib/bootstrapApp.js",
-          "name": "multi ../lib/bootstrapPlugins.js ../lib/bootstrapTemplates.js ../lib/bootstrapApp.js"
-        },
-        {
-          "id": 118,
-          "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-1-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/node_modules/react-static/lib/bootstrapTemplates.js",
-          "name": "../lib/bootstrapTemplates.js"
-        },
-        {
-          "id": 44,
-          "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/artifacts/react-static-templates.js",
-          "name": "/Users/adammenges/Development/adammengesWebsite/artifacts/react-static-templates.js"
-        },
-        {
-          "id": null,
-          "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js",
-          "name": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js"
-        },
-        {
-          "id": null,
-          "identifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/components/Header.js",
-          "name": "/Users/adammenges/Development/adammengesWebsite/src/components/Header.js"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "assets": [],
-      "reasons": [
-        {
-          "moduleId": 53,
-          "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
-          "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-          "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-          "type": "harmony side effect evaluation",
-          "userRequest": "react-resize-aware",
-          "loc": "1:90-137"
-        },
-        {
-          "moduleId": 53,
-          "moduleIdentifier": "/Users/adammenges/Development/adammengesWebsite/node_modules/babel-loader/lib/index.js??ref--4-oneOf-0-0!/Users/adammenges/Development/adammengesWebsite/node_modules/react-hot-loader/webpack.js!/Users/adammenges/Development/adammengesWebsite/src/pages/index.js ba74bbe138baae5b2b58a49d669c3233",
-          "module": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-          "moduleName": "/Users/adammenges/Development/adammengesWebsite/src/pages/index.js + 1 modules",
-          "type": "harmony import specifier",
-          "userRequest": "react-resize-aware",
-          "loc": "1:183-197"
-        }
-      ],
-      "usedExports": [
-        "default"
-      ],
-      "providedExports": null,
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module is not an ECMAScript module"
-      ],
-      "depth": 5,
-      "source": "var e = require(\"react\"),\n    t = {\n  display: \"block\",\n  opacity: 0,\n  position: \"absolute\",\n  top: 0,\n  left: 0,\n  height: \"100%\",\n  width: \"100%\",\n  overflow: \"hidden\",\n  pointerEvents: \"none\",\n  zIndex: -1\n},\n    n = function n(_n) {\n  var r = _n.onResize,\n      i = e.useRef();\n  return function (t, n) {\n    e.useEffect(function () {\n      var e = t.current && t.current.contentDocument.defaultView;\n      return n(), e && e.addEventListener(\"resize\", n), function () {\n        e && \"function\" == typeof e.removeEventListener && e.removeEventListener(\"resize\", n);\n      };\n    }, []);\n  }(i, function () {\n    return r(i);\n  }), e.createElement(\"object\", {\n    type: \"text/html\",\n    style: t,\n    data: \"about:blank\",\n    ref: i,\n    \"aria-hidden\": !0,\n    \"aria-label\": \"resize-listener\",\n    tabIndex: -1\n  });\n},\n    r = function r(e) {\n  return {\n    width: null != e ? e.offsetWidth : null,\n    height: null != e ? e.offsetHeight : null\n  };\n};\n\nmodule.exports = function (t) {\n  void 0 === t && (t = r);\n  var i = e.useState({\n    width: null,\n    height: null\n  }),\n      u = i[0],\n      o = i[1],\n      l = e.useCallback(function (e) {\n    return o(t(e.current));\n  }, [t]);\n  return [e.useMemo(function () {\n    return e.createElement(n, {\n      onResize: l\n    });\n  }, [l]), u];\n};"
     },
     {
       "id": "",

@@ -6484,6 +6484,13 @@ react-helmet@^5.2.0:
     prop-types "^15.5.4"
     react-side-effect "^1.1.0"
 
+react-hooks-window-size@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-hooks-window-size/-/react-hooks-window-size-0.1.0.tgz#d5ee7001d875b62144fa33e217684159e4888feb"
+  integrity sha512-tn8eYVURHmiKecP3tBMfH7Rt40oFCIQRJ6br46Ka3ELOjxZhgT8viM1Q+AdTxNvO9iwKS+ebfy7DjwOwg1PF/w==
+  dependencies:
+    tslib "^1.9.3"
+
 react-hot-loader@^4.3.6, react-hot-loader@^4.8.4:
   version "4.8.4"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.8.4.tgz#357ba342e367fd42d6a870a9c0601c23fa0730c6"
@@ -7802,7 +7809,7 @@ tryer@^1.0.0:
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
 
-tslib@^1.9.0:
+tslib@^1.9.0, tslib@^1.9.3:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==

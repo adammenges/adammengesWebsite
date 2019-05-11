@@ -110,7 +110,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 27);
+/******/ 	return __webpack_require__(__webpack_require__.s = 26);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -183,7 +183,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(30);
+var _requireUniversalModule = __webpack_require__(29);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -198,7 +198,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(32);
+var _reportChunks = __webpack_require__(31);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -220,13 +220,13 @@ var _hoistNonReactStatics = __webpack_require__(17);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _vm = __webpack_require__(33);
+var _vm = __webpack_require__(32);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
 var _utils = __webpack_require__(11);
 
-var _helpers = __webpack_require__(34);
+var _helpers = __webpack_require__(33);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -651,7 +651,7 @@ var _utils = __webpack_require__(11);
 
 var requireById = function requireById(id) {
   if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(31)("" + id);
+    return __webpack_require__(30)("" + id);
   }
 
   return __webpack_require__('' + id);
@@ -687,7 +687,7 @@ var Router = __webpack_require__(5);
   return external_react_default.a.createElement("div", null, "This is a dynamic page! It will not be statically exported, but is available at runtime");
 });
 // EXTERNAL MODULE: /Users/adammenges/Development/adammengesWebsite/src/app.css
-var app = __webpack_require__(43);
+var app = __webpack_require__(42);
 
 // CONCATENATED MODULE: /Users/adammenges/Development/adammengesWebsite/src/App.js
 
@@ -1217,28 +1217,75 @@ var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_)
 var slicedToArray_ = __webpack_require__(25);
 var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
 
-// EXTERNAL MODULE: external "react-resize-aware"
-var external_react_resize_aware_ = __webpack_require__(26);
-var external_react_resize_aware_default = /*#__PURE__*/__webpack_require__.n(external_react_resize_aware_);
-
 // CONCATENATED MODULE: /Users/adammenges/Development/adammengesWebsite/src/components/Header.js
 
+ // import useResizeAware from "react-resize-aware";
+// import { useWindowSize } from "react-hooks-window-size";
 
+
+
+var Header_useWindowSize = function useWindowSize() {
+  var _useState = Object(external_react_["useState"])(function () {
+    if (typeof window !== "undefined") {
+      return {
+        width: window.innerWidth,
+        height: window.innerHeight
+      };
+    }
+  }),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      windowSize = _useState2[0],
+      setWindowSize = _useState2[1];
+
+  Object(external_react_["useEffect"])(function () {
+    if (typeof window !== "undefined") {
+      var onResize = function onResize() {
+        return setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight
+        });
+      };
+
+      window.addEventListener("resize", onResize);
+      return function () {
+        return window.removeEventListener("resize", onResize);
+      };
+    }
+  });
+  return windowSize;
+};
 
 /* harmony default export */ var Header = (function () {
-  var _useResizeAware = external_react_resize_aware_default()(),
-      _useResizeAware2 = slicedToArray_default()(_useResizeAware, 2),
-      resizeListener = _useResizeAware2[0],
-      sizes = _useResizeAware2[1];
+  // const [resizeListener, sizes] = useResizeAware();
+  var size = Header_useWindowSize(); // React.useEffect(() => {
+  //   console.log("size.width " + size.width);
+  //   console.log("size.height " + size.height);
+  // }, [size.width, size.height]);
 
-  var small = sizes.width < 640;
+  var small = false;
+  var h = "100vh";
+  var w = "100vw";
+
+  if (typeof window !== "undefined") {
+    small = size.width < 640;
+    h = window.innerHeight;
+    w = window.innerWidth;
+
+    if (size.height) {
+      h = size.height;
+    }
+
+    if (size.width) {
+      w = size.width;
+    }
+  }
+
   var desktop = external_react_default.a.createElement("div", {
     style: {
       backgroundColor: "#00080e",
-      height: "100vh",
-      // maybe do this with code?
-      // height: sizes.height,
-      // width: sizes.width,
+      // height: "100vh", // maybe do this with code?
+      height: h,
+      width: w,
       position: "relative",
       // left: 0,
       // top: 0
@@ -1248,14 +1295,14 @@ var external_react_resize_aware_default = /*#__PURE__*/__webpack_require__.n(ext
     className: "me-blend",
     style: {
       position: "absolute",
-      left: sizes.width / 2 - 350 + 150,
-      top: sizes.height / 2 - 350 + 30
+      left: w / 2 - 200,
+      top: h / 2 - 320
     }
   }), external_react_default.a.createElement("div", {
     style: {
       position: "absolute",
-      left: sizes.width / 2 - 300,
-      top: sizes.height / 2 - 50 // size of div
+      left: w / 2 - 300,
+      top: h / 2 - 50 // size of div
 
     }
   }, external_react_default.a.createElement("div", {
@@ -1279,27 +1326,26 @@ var external_react_resize_aware_default = /*#__PURE__*/__webpack_require__.n(ext
   var mobile = external_react_default.a.createElement("div", {
     style: {
       backgroundColor: "#00080e",
-      height: "100vh",
-      // maybe do this with code?
-      // height: sizes.height,
-      // width: sizes.width,
+      // height: "100vh", // maybe do this with code?
+      height: h,
+      width: w,
       position: "relative",
       // left: 0,
       // top: 0
       overflow: "hidden"
     }
-  }, resizeListener, external_react_default.a.createElement("div", {
+  }, external_react_default.a.createElement("div", {
     className: "me-blend",
     style: {
       position: "absolute",
-      left: sizes.width / 2 - 225,
-      top: sizes.height / 2 - 225 - 75
+      left: w / 2 - 225,
+      top: h / 2 - 225 - 75
     }
   }), external_react_default.a.createElement("div", {
     style: {
       position: "absolute",
-      left: sizes.width / 2 - 110,
-      top: sizes.height / 2 + 125
+      left: w / 2 - 110,
+      top: h / 2 + 125
     }
   }, external_react_default.a.createElement("div", {
     style: {
@@ -1319,7 +1365,12 @@ var external_react_resize_aware_default = /*#__PURE__*/__webpack_require__.n(ext
   }, external_react_default.a.createElement("a", {
     href: "sms:720-484-0275"
   }, "720-484-0275"))));
-  return external_react_default.a.createElement("div", null, resizeListener, small ? mobile : desktop);
+  console.log(small);
+  return external_react_default.a.createElement("div", {
+    style: {
+      position: "relative"
+    }
+  }, small ? mobile : desktop);
 });
 // CONCATENATED MODULE: /Users/adammenges/Development/adammengesWebsite/src/pages/index.js
 
@@ -1469,21 +1520,15 @@ module.exports = require("@babel/runtime/helpers/slicedToArray");
 
 /***/ }),
 /* 26 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = require("react-resize-aware");
+__webpack_require__(27);
+__webpack_require__(28);
+module.exports = __webpack_require__(34);
+
 
 /***/ }),
 /* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(28);
-__webpack_require__(29);
-module.exports = __webpack_require__(35);
-
-
-/***/ }),
-/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1505,7 +1550,7 @@ if (typeof document !== 'undefined' && module && module.hot) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)(module)))
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1533,7 +1578,7 @@ if (typeof document !== 'undefined' && module && module.hot) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)(module)))
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1744,7 +1789,7 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -1772,10 +1817,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 31;
+webpackContext.id = 30;
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1884,13 +1929,13 @@ ReportChunks.childContextTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = require("vm");
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1957,28 +2002,28 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(36);
+var _interopRequireWildcard = __webpack_require__(35);
 
-var _interopRequireDefault = __webpack_require__(37);
+var _interopRequireDefault = __webpack_require__(36);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(38));
+var _extends2 = _interopRequireDefault(__webpack_require__(37));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(39));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(38));
 
 var React = _interopRequireWildcard(__webpack_require__(0));
 
-var _useStaticInfo = __webpack_require__(40);
+var _useStaticInfo = __webpack_require__(39);
 /* eslint-disable import/no-dynamic-require */
 
 
@@ -1999,7 +2044,7 @@ function Suspense(_ref) {
 React.Suspense = Suspense;
 React["default"].Suspense = Suspense;
 
-var App = __webpack_require__(41)["default"];
+var App = __webpack_require__(40)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -2012,37 +2057,37 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("/Users/adammenges/Development/adammengesWebsite/node_modules/react-static/lib/browser/hooks/useStaticInfo");
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2079,10 +2124,10 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(42)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41)(module)))
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -2112,17 +2157,17 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(44)(false);
+exports = module.exports = __webpack_require__(43)(false);
 // Module
 exports.push([module.i, "* {\n  scroll-behavior: smooth;\n}\n\nhtml {\n  background-color: #00080e;\n}\n\nbody {\n  font-family: \"Lato\", sans-serif;\n  font-weight: 300;\n  font-size: 16px;\n  color: rgb(190, 190, 190);\n  margin: 0;\n  padding: 0;\n}\n\na {\n  font-family: \"Lato\", sans-serif;\n  color: rgb(190, 190, 190);\n  text-decoration: none;\n  font-weight: 300;\n  font-size: 16px;\n}\n\n#headerBackground {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  height: 50%;\n  background-color: #00080e;\n}\n#footerBackground {\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  bottom: 0;\n  height: 50%;\n  background-color: #00080e;\n}\n\n.me-blend {\n  background-image: url(\"/me.jpg\");\n  background-size: 700px 700px;\n  width: 700px;\n  height: 700px;\n  background-color: #00080e;\n  background-repeat: no-repeat;\n  background-blend-mode: screen;\n}\n\n@media only screen and (max-width: 640px) {\n  .me-blend {\n    background-image: url(\"/me.jpg\");\n    background-size: 450px 450px;\n    width: 450px;\n    height: 450px;\n    background-color: #00080e;\n    background-repeat: no-repeat;\n    background-blend-mode: screen;\n  }\n}\n", ""]);
 
 
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

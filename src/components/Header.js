@@ -1,19 +1,55 @@
 import React from "react";
-import useResizeAware from "react-resize-aware";
+// import useResizeAware from "react-resize-aware";
+// import { useWindowSize } from "react-hooks-window-size";
+
+import { useState, useEffect } from "react";
+
+const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState(() => {
+    if (typeof window !== "undefined") {
+      return {
+        width: window.innerWidth,
+        height: window.innerHeight
+      };
+    }
+  });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const onResize = () =>
+        setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+      window.addEventListener("resize", onResize);
+      return () => window.removeEventListener("resize", onResize);
+    }
+  });
+
+  return windowSize;
+};
 
 export default () => {
-  const [resizeListener, sizes] = useResizeAware();
-  const small = sizes.width < 640;
-  console.log("sizes.width");
-  console.log(sizes.width);
-  let h = window.innerHeight;
-  let w = window.innerWidth;
-  if (sizes.height) {
-    h = sizes.height;
+  // const [resizeListener, sizes] = useResizeAware();
+
+  // React.useEffect(() => {
+  //   console.log("size.width " + size.width);
+  //   console.log("size.height " + size.height);
+  // }, [size.width, size.height]);
+
+  const size = useWindowSize();
+  let small = false;
+  let h = "100vh";
+  let w = "100vw";
+  if (typeof window !== "undefined") {
+    small = size.width < 640;
+    h = window.innerHeight;
+    w = window.innerWidth;
+    if (size.height) {
+      h = size.height;
+    }
+    if (size.width) {
+      w = size.width;
+    }
   }
-  if (sizes.width) {
-    w = sizes.width;
-  }
+
   const desktop = (
     <div
       style={{
@@ -80,7 +116,6 @@ export default () => {
         overflow: "hidden"
       }}
     >
-      {resizeListener}
       <div
         className="me-blend"
         style={{
@@ -122,10 +157,5 @@ export default () => {
     </div>
   );
   console.log(small);
-  return (
-    <div style={{ position: "relative" }}>
-      {resizeListener}
-      {small ? mobile : desktop}
-    </div>
-  );
+  return <div style={{ position: "relative" }}>{small ? mobile : desktop}</div>;
 };
