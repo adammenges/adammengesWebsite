@@ -4,13 +4,23 @@ import useResizeAware from "react-resize-aware";
 export default () => {
   const [resizeListener, sizes] = useResizeAware();
   const small = sizes.width < 640;
+  console.log("sizes.width");
+  console.log(sizes.width);
+  let h = window.innerHeight;
+  let w = window.innerWidth;
+  if (sizes.height) {
+    h = sizes.height;
+  }
+  if (sizes.width) {
+    w = sizes.width;
+  }
   const desktop = (
     <div
       style={{
         backgroundColor: "#00080e",
-        height: "100vh", // maybe do this with code?
-        // height: sizes.height,
-        // width: sizes.width,
+        // height: "100vh", // maybe do this with code?
+        height: h,
+        width: w,
         position: "relative",
         // left: 0,
         // top: 0
@@ -21,15 +31,15 @@ export default () => {
         className="me-blend"
         style={{
           position: "absolute",
-          left: sizes.width / 2 - 350 + 150,
-          top: sizes.height / 2 - 350 + 30
+          left: w / 2 - 200,
+          top: h / 2 - 320
         }}
       />
       <div
         style={{
           position: "absolute",
-          left: sizes.width / 2 - 300,
-          top: sizes.height / 2 - 50 // size of div
+          left: w / 2 - 300,
+          top: h / 2 - 50 // size of div
         }}
       >
         <div
@@ -61,9 +71,9 @@ export default () => {
     <div
       style={{
         backgroundColor: "#00080e",
-        height: "100vh", // maybe do this with code?
-        // height: sizes.height,
-        // width: sizes.width,
+        // height: "100vh", // maybe do this with code?
+        height: h,
+        width: w,
         position: "relative",
         // left: 0,
         // top: 0
@@ -75,15 +85,15 @@ export default () => {
         className="me-blend"
         style={{
           position: "absolute",
-          left: sizes.width / 2 - 225,
-          top: sizes.height / 2 - 225 - 75
+          left: w / 2 - 225,
+          top: h / 2 - 225 - 75
         }}
       />
       <div
         style={{
           position: "absolute",
-          left: sizes.width / 2 - 110,
-          top: sizes.height / 2 + 125
+          left: w / 2 - 110,
+          top: h / 2 + 125
         }}
       >
         <div
@@ -111,8 +121,9 @@ export default () => {
       </div>
     </div>
   );
+  console.log(small);
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       {resizeListener}
       {small ? mobile : desktop}
     </div>
