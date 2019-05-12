@@ -1,2 +1,2 @@
 # Adam Menges 
-Wedsite for adammenges.com
+Wedsite for [adammenges.com](https://adammenges.com)
