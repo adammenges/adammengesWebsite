@@ -29,9 +29,9 @@ const useWindowSize = () => {
 
 const Header = () => {
   const size = useWindowSize();
-  const small = size.width <= 640;
   const h = size.height;
   const w = size.width;
+  const small = w <= 640;
 
   const desktop = (
     <div
