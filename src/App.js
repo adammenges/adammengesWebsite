@@ -27,7 +27,7 @@ const useWindowSize = () => {
   return windowSize;
 };
 
-const Header = () => {
+export const Header = () => {
   const size = useWindowSize();
   const h = size.height;
   const w = size.width;
