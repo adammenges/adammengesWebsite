@@ -1,7 +1,7 @@
 import React from 'react'
 import { projectsWidth } from './Project'
 
-// This component is really just to center things in story book,
+// This component is really just to center things in storybook,
 // because it bothers me otherwise, haha
 export const Center = ({ children }) => {
   return (
