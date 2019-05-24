@@ -2,39 +2,6 @@ import React from 'react'
 import { useWindowSize } from './utils.js'
 import GestureView from 'react-gesture-view'
 
-export function TabContentThree() {
-  const [index, setIndex] = React.useState(0)
-  return (
-    <GestureView
-      value={index}
-      enableMouse={true}
-      onRequestChange={i => setIndex(i)}
-    >
-      <div>First panel</div>
-      <div>Second panel</div>
-      <div>Third panel</div>
-      {(props, active, load) => <div {...props}>fourth panel</div>}
-    </GestureView>
-  )
-}
-
-export function TabContent() {
-  const [index, setIndex] = React.useState(0)
-  const ref = React.useRef()
-
-  function focusCurrentIndex() {
-    ref.current.focus()
-  }
-
-  return (
-    <GestureView ref={ref} value={index} onRequestChange={i => setIndex(i)}>
-      <div>First panel</div>
-      <div>Second panel</div>
-      <div>Third panel</div>
-    </GestureView>
-  )
-}
-
 // aspect ratio of my MacBook, idk seems like a good place to start
 export const projectsWidth = 2304 / 4
 export const projectsHeight = 1440 / 4
