@@ -8,7 +8,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-gesture-responder": "^2.1.0",
-    "react-gesture-view": "^2.1.0",
+    "react-gesture-view": "^2.1.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {

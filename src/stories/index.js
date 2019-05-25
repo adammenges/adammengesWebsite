@@ -6,7 +6,7 @@ import { linkTo } from '@storybook/addon-links'
 
 import { Button, Welcome } from '@storybook/react/demo'
 import { Header } from '../Header'
-import { Project, projectsWidth } from '../Project'
+import { Project } from '../Project'
 import { Center } from '../Center'
 
 storiesOf('Welcome', module).add('to Storybook', () => (
@@ -25,7 +25,11 @@ storiesOf('Welcome', module).add('to Storybook', () => (
 //     </Button>
 //   ));
 
-storiesOf('Header', module).add('Usual Header', () => <Header />)
+// storiesOf('Header', module).add('Usual Header', () => (
+//   <div className="App">
+//     <Header />
+//   </div>
+// ))
 
 storiesOf('Project', module).add('Usual Project', () => (
   <Center>
