@@ -8,8 +8,8 @@ export const projectsHeight = 1440 / 4
 
 export const Project = () => {
   const [index, setIndex] = React.useState(0)
-  const size = useWindowSize()
-  const small = size.width <= 640
+  // const size = useWindowSize()
+  // const small = size.width <= 640
 
   const project1 = (
     <div
@@ -62,14 +62,9 @@ export const Project = () => {
       </GestureView>
     </div>
   )
-  const mobile = (
-    <div style={{}}>
-      <div>something</div>
-    </div>
-  )
   return (
     <div style={{ position: 'relative' }} className="noselect">
-      {small ? desktop : desktop}
+      {desktop}
     </div>
   )
 }
