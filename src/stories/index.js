@@ -31,7 +31,7 @@ storiesOf('Welcome', module).add('to Storybook', () => (
 //   </div>
 // ))
 
-storiesOf('Project', module).add('Usual Project', () => (
+storiesOf('Project', module).add('Sample Project', () => (
   <Center>
     <Project />
   </Center>
