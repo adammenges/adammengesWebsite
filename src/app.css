@@ -60,6 +60,13 @@ a {
   background-blend-mode: screen;
 }
 
+.circle {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  /* padding-top: 50%; */
+}
+
 .noWebShit {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */

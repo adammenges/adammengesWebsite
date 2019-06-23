@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Header } from './Header.js'
-import { Project, projectsHeight, projectsWidth } from './Project'
+import { Project } from './Project'
 import { CenterProjects } from './Center'
 
 function App() {
