@@ -34,15 +34,7 @@ export const SelectionIndicator = ({ highlighted, i, onClick }) => {
     <div
       key={i}
       style={{
-        // margin: '0 auto',
-        // height: '10px',
-        // width: '30px',
-        // marginTop: '0px',
-        // marginRight: 'auto',
-        // marginLeft: 'auto',
-        // textAlign: 'center',
         display: 'inline-block',
-        // margin: '0 auto',
       }}
       onClick={() => onClick(i)}
     >
@@ -54,8 +46,6 @@ export const SelectionIndicator = ({ highlighted, i, onClick }) => {
           marginLeft: '3px',
           marginTop: '-10px',
           textAlign: 'center',
-          // display: 'inline-block',
-          // margin: '0 auto',
         }}
       />
     </div>
