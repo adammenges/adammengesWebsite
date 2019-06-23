@@ -6,12 +6,8 @@ import GestureView from 'react-gesture-view'
 export const projectsWidth = 2304 / 4
 export const projectsHeight = 1440 / 4
 
-export const Project = () => {
-  const [index, setIndex] = React.useState(0)
-  // const size = useWindowSize()
-  // const small = size.width <= 640
-
-  const project1 = (
+export const ProjectWrapper = (element, key) => {
+  return (
     <div
       style={{
         width: projectsWidth,
@@ -20,25 +16,24 @@ export const Project = () => {
         color: '#FFF',
         outline: 'none',
       }}
-      className="noselect"
+      className="noWebShit"
+      key={key}
     >
-      <div className="noselect">something111</div>
+      <div className="noWebShit" style={{ userSelect: 'none' }}>
+        {element}
+      </div>
     </div>
   )
-  const project2 = (
-    <div
-      style={{
-        width: projectsWidth,
-        height: projectsHeight,
-        backgroundColor: '#777',
-        color: '#FFF',
-        outline: 'none',
-      }}
-      className="noselect"
-    >
-      <div className="noselect">something222</div>
-    </div>
-  )
+}
+
+export const Project = children => {
+  const [index, setIndex] = React.useState(0)
+  // const size = useWindowSize()
+  // const small = size.width <= 640
+
+  const projectsWrapped = children.children.map((x, i) => {
+    return ProjectWrapper(x, i)
+  })
 
   const desktop = (
     <div
@@ -49,21 +44,20 @@ export const Project = () => {
         color: '#FFF',
         outline: 'none',
       }}
-      className="noselect"
+      className="noWebShit"
     >
       <GestureView
         value={index}
         enableMouse={true}
         onRequestChange={i => setIndex(i)}
       >
-        {project1}
-        {project2}
+        {projectsWrapped}
         {/* {(props, active, load) => <div {...props}>fourth panel</div>} */}
       </GestureView>
     </div>
   )
   return (
-    <div style={{ position: 'relative' }} className="noselect">
+    <div style={{ position: 'relative' }} className="noWebShit">
       {desktop}
     </div>
   )

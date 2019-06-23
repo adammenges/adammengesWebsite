@@ -3,7 +3,7 @@ import { projectsWidth } from './Project'
 
 // This component is really just to center things in storybook,
 // because it bothers me otherwise, haha
-export const Center = ({ children }) => {
+export const CenterProjects = ({ children }) => {
   return (
     <div
       style={{
@@ -12,7 +12,7 @@ export const Center = ({ children }) => {
         paddingTop: '12px',
         // margin: '0 auto',
       }}
-      className="noselect"
+      className="noWebShit"
     >
       <div
         style={{
@@ -22,7 +22,7 @@ export const Center = ({ children }) => {
           marginLeft: 'auto',
           // margin: '0 auto',
         }}
-        className="noselect"
+        className="noWebShit"
       >
         {children}
       </div>

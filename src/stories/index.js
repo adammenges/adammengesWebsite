@@ -7,7 +7,8 @@ import { linkTo } from '@storybook/addon-links'
 import { Button, Welcome } from '@storybook/react/demo'
 import { Header } from '../Header'
 import { Project } from '../Project'
-import { Center } from '../Center'
+import { CenterProjects } from '../Center'
+import '../App.css'
 
 storiesOf('Welcome', module).add('to Storybook', () => (
   <Welcome showApp={linkTo('Button')} />
@@ -32,7 +33,7 @@ storiesOf('Welcome', module).add('to Storybook', () => (
 // ))
 
 storiesOf('Project', module).add('Sample Project', () => (
-  <Center>
+  <CenterProjects>
     <Project />
-  </Center>
+  </CenterProjects>
 ))
