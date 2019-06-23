@@ -26,7 +26,7 @@ export const ProjectWrapper = (element, key) => {
   )
 }
 
-export const Circle = ({ highlighted, i, onClick }) => {
+export const SelectionIndicator = ({ highlighted, i, onClick }) => {
   console.log(highlighted)
   console.log('i')
   console.log(i)
@@ -34,24 +34,27 @@ export const Circle = ({ highlighted, i, onClick }) => {
     <div
       key={i}
       style={{
-        margin: '0 auto',
-        marginTop: '10px',
-        marginRight: 'auto',
-        marginLeft: 'auto',
-        textAlign: 'center',
+        // margin: '0 auto',
+        // height: '10px',
+        // width: '30px',
+        // marginTop: '0px',
+        // marginRight: 'auto',
+        // marginLeft: 'auto',
+        // textAlign: 'center',
         display: 'inline-block',
         // margin: '0 auto',
       }}
       onClick={() => onClick(i)}
     >
       <div
-        className="circle"
+        className="rectangle"
         style={{
           backgroundColor: highlighted ? '#FFF' : '#555',
           marginRight: '3px',
           marginLeft: '3px',
+          marginTop: '-10px',
           textAlign: 'center',
-          display: 'inline-block',
+          // display: 'inline-block',
           // margin: '0 auto',
         }}
       />
@@ -92,7 +95,7 @@ export const Project = ({ children }) => {
       </GestureView>
     </div>
   )
-  const circleIndexes = [...Array(children.length).keys()]
+  const selectionIndexes = [...Array(children.length).keys()]
   return (
     <div style={{ position: 'relative' }} className="noWebShit">
       {desktop}
@@ -100,6 +103,7 @@ export const Project = ({ children }) => {
         style={{
           width: projectsWidth,
           margin: '0 auto',
+          height: '4px',
           marginRight: 'auto',
           marginLeft: 'auto',
           textAlign: 'center',
@@ -107,9 +111,9 @@ export const Project = ({ children }) => {
         }}
         className="noWebShit"
       >
-        {circleIndexes.map(x => {
+        {selectionIndexes.map(x => {
           return (
-            <Circle
+            <SelectionIndicator
               highlighted={index === x}
               key={x}
               i={x}

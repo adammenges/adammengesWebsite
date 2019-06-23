@@ -15,8 +15,13 @@ function App() {
       <br />
       <CenterProjects>
         <Project>
-          <div>stuff</div>
+          <div>stuff1</div>
           <div>stuff2</div>
+          <div>stuff3</div>
+          <div>stuff4</div>
+          <div>stuff5</div>
+          <div>stuff6</div>
+          <div>stuff7</div>
         </Project>
       </CenterProjects>
       <br />
