@@ -1,17 +1,17 @@
 import React from 'react'
-// import { useWindowSize } from './utils.js'
+import { useWindowSize } from './utils.js'
 import GestureView from 'react-gesture-view'
 
 // aspect ratio of my MacBook, idk seems like a good place to start
-export const projectsWidth = 2304 / 4
-export const projectsHeight = 1440 / 4
+// export const projectsWidth = 2304 / 4
+// export const projectsHeight = 1440 / 4
 
-export const ProjectWrapper = (element, key) => {
+export const ProjectWrapper = (element, key, width, height) => {
   return (
     <div
       style={{
-        width: projectsWidth,
-        height: projectsHeight,
+        width: width,
+        height: height,
         backgroundColor: '#111',
         color: '#FFF',
         outline: 'none',
@@ -54,11 +54,21 @@ export const SelectionIndicator = ({ highlighted, i, onClick }) => {
 
 export const Project = ({ children }) => {
   const [index, setIndex] = React.useState(0)
-  // const size = useWindowSize()
-  // const small = size.width <= 640
+  const size = useWindowSize()
+
+  // aspect ratio of my MacBook, idk seems like a good place to start
+  const oriProjectsWidth = 2304 / 4
+  const oriProjectsHeight = 1440 / 4
+
+  const small = size.width <= oriProjectsWidth
+
+  let projectsWidth = small ? size.width : oriProjectsWidth
+  let projectsHeight = small
+    ? oriProjectsHeight * (projectsWidth / oriProjectsWidth)
+    : oriProjectsHeight
 
   const projectsWrapped = children.map((x, i) => {
-    return ProjectWrapper(x, i)
+    return ProjectWrapper(x, i, projectsWidth, projectsHeight)
   })
 
   console.log('index')
@@ -86,16 +96,22 @@ export const Project = ({ children }) => {
     </div>
   )
   const selectionIndexes = [...Array(children.length).keys()]
-  return (
-    <div style={{ position: 'relative' }} className="noWebShit">
+
+  const main = (
+    <div
+      style={{
+        position: 'relative',
+      }}
+      className="noWebShit"
+    >
       {desktop}
       <div
         style={{
           width: projectsWidth,
-          margin: '0 auto',
-          height: '4px',
-          marginRight: 'auto',
-          marginLeft: 'auto',
+          // margin: '0 auto',
+          // height: '4px',
+          // marginRight: 'auto',
+          // marginLeft: 'auto',
           textAlign: 'center',
           // margin: '0 auto',
         }}
@@ -111,6 +127,33 @@ export const Project = ({ children }) => {
             />
           )
         })}
+      </div>
+    </div>
+  )
+  return (
+    <div
+      style={{
+        width: '100%',
+        textAlign: 'center',
+        paddingTop: '12px',
+        // transform: small ? 'scale(' + size.width / projectsWidth + ')' : '',
+        // margin: '0 auto',
+      }}
+      className="noWebShit"
+    >
+      <div
+        style={{
+          // width: projectsWidth,
+          transform: small ? 'scale(' + size.width / projectsWidth + ')' : '',
+          width: small ? size.width / projectsWidth : projectsWidth,
+          // margin: '0 auto',
+          // marginRight: 'auto',
+          marginLeft: small ? 0 : (size.width - projectsWidth) / 2,
+          // margin: '0 auto',
+        }}
+        className="noWebShit"
+      >
+        {main}
       </div>
     </div>
   )

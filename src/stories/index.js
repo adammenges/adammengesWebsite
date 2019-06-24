@@ -33,7 +33,7 @@ storiesOf('Welcome', module).add('to Storybook', () => (
 // ))
 
 storiesOf('Project', module).add('Sample Project', () => (
-  <CenterProjects>
+  <CenterProjects width={576}>
     <Project>
       <div>stuff1</div>
       <div>stuff2</div>

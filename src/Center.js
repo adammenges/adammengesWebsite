@@ -1,9 +1,9 @@
 import React from 'react'
-import { projectsWidth } from './Project'
+// import { projectsWidth } from './Project'
 
 // This component is really just to center things in storybook,
 // because it bothers me otherwise, haha
-export const CenterProjects = ({ children }) => {
+export const CenterProjects = ({ children, width }) => {
   return (
     <div
       style={{
@@ -16,7 +16,7 @@ export const CenterProjects = ({ children }) => {
     >
       <div
         style={{
-          width: projectsWidth,
+          width: width,
           margin: '0 auto',
           marginRight: 'auto',
           marginLeft: 'auto',
