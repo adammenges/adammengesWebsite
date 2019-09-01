@@ -47,13 +47,6 @@ export const Header = () => {
         >
           <a href="mailto:adam@adammenges.com">adam@adammenges.com</a>
         </div>
-        <div
-          style={{
-            fontSize: 17,
-          }}
-        >
-          <a href="sms:720-484-0275">720-484-0275</a>
-        </div>
       </div>
     </div>
   )
@@ -96,13 +89,6 @@ export const Header = () => {
           }}
         >
           <a href="mailto:adam@adammenges.com">adam@adammenges.com</a>
-        </div>
-        <div
-          style={{
-            fontSize: 17,
-          }}
-        >
-          <a href="sms:720-484-0275">720-484-0275</a>
         </div>
       </div>
     </div>

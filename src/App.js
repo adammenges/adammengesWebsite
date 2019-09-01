@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './app.css'
 import { Header } from './Header.js'
 import { Project } from './Project'
 // import { CenterProjects } from './Center'
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App noWebShit">
       <Header />
-      <OldSchoolSpaces number={3} />
+      {/* <OldSchoolSpaces number={3} />
       <Project>
         <div>stuff1</div>
         <div>stuff2</div>
@@ -32,7 +32,7 @@ function App() {
         <div>stuff6</div>
         <div>stuff7</div>
       </Project>
-      <OldSchoolSpaces number={7} />
+      <OldSchoolSpaces number={7} /> */}
     </div>
   )
 }
