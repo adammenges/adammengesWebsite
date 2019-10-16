@@ -1,7 +1,7 @@
 import React from 'react'
 import { useWindowSize } from './utils.js'
 
-export const Header = () => {
+export const WhiteHeader = () => {
   const size = useWindowSize()
   const h = size.height
   const w = size.width
@@ -10,7 +10,7 @@ export const Header = () => {
   const desktop = (
     <div
       style={{
-        backgroundColor: '#00080e',
+        backgroundColor: '#cecece',
         height: h,
         width: w,
         position: 'relative',
@@ -18,11 +18,11 @@ export const Header = () => {
       }}
     >
       <div
-        className="me-blend"
+        className="me-blend-white"
         style={{
           position: 'absolute',
-          left: w / 2 - 200,
-          top: h / 2 - 320,
+          left: w / 2 + 0,
+          top: h / 2 - 170,
         }}
       />
       <div
@@ -35,6 +35,7 @@ export const Header = () => {
         <div
           style={{
             fontSize: 37,
+            color: '#00080e',
           }}
         >
           Adam Menges
@@ -43,9 +44,10 @@ export const Header = () => {
           style={{
             fontSize: 17,
             marginTop: -2,
+            color: '#00080e',
           }}
         >
-          <a class="a-black" href="mailto:adam@adammenges.com">
+          <a class="a-white" href="mailto:adam@adammenges.com">
             adam@adammenges.com
           </a>
         </div>
@@ -55,7 +57,7 @@ export const Header = () => {
   const mobile = (
     <div
       style={{
-        backgroundColor: '#00080e',
+        backgroundColor: '#cecece',
         height: h,
         width: w,
         position: 'relative',
@@ -63,23 +65,24 @@ export const Header = () => {
       }}
     >
       <div
-        className="me-blend-small"
+        className="me-blend-small-white"
         style={{
           position: 'absolute',
-          left: w / 2 - 225,
-          top: h / 2 - 225 - 50,
+          left: w / 2 - 125,
+          top: h / 2 - 225,
         }}
       />
       <div
         style={{
           position: 'absolute',
           left: w / 2 - 110,
-          top: h / 2 + 125,
+          top: h / 2 + 45,
         }}
       >
         <div
           style={{
             fontSize: 37,
+            color: '#00080e',
           }}
         >
           Adam Menges
@@ -90,7 +93,7 @@ export const Header = () => {
             marginTop: -2,
           }}
         >
-          <a class="a-black" href="mailto:adam@adammenges.com">
+          <a class="a-white" href="mailto:adam@adammenges.com">
             adam@adammenges.com
           </a>
         </div>
