@@ -36,8 +36,10 @@ function App() {
     return true
   })
 
-  // force dark mode for now until I finish designing the light mode UI
-  // prefersDark = true
+  // hack in using the right background color so the scroll rubber banding works
+  // how I designed
+  const baseHTML = document.querySelectorAll('html')
+  baseHTML[0].style.backgroundColor = prefersDark ? '#00080e' : '#cecece'
 
   const TheHeader = prefersDark ? <Header /> : <WhiteHeader />
   return (
