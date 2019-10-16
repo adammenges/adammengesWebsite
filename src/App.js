@@ -3,6 +3,7 @@ import './app.css'
 import { Header } from './Header.js'
 import { WhiteHeader } from './Header-White.js'
 import { Project } from './Project'
+import { useState, useEffect } from 'react'
 // import { CenterProjects } from './Center'
 
 // I should do this the right way later haha
@@ -19,17 +20,33 @@ const OldSchoolSpaces = ({ number }) => {
   })
 }
 
+function handleDoubleClick(e, prefersDark, setPrefersDark) {
+  setPrefersDark(!prefersDark)
+}
+
 function App() {
-  let prefersDark =
-    window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches
+  // let [prefersDark, setPrefersDark] = useState(
+  //   () =>
+  //     window.matchMedia &&
+  //     window.matchMedia('(prefers-color-scheme: dark)').matches
+  // )
+
+  // force default dark mode for now until I finish designing the light mode UI
+  const [prefersDark, setPrefersDark] = useState(() => {
+    return true
+  })
 
   // force dark mode for now until I finish designing the light mode UI
-  prefersDark = true
+  // prefersDark = true
 
   const TheHeader = prefersDark ? <Header /> : <WhiteHeader />
   return (
-    <div className="App noWebShit">
+    <div
+      className="App noWebShit"
+      onDoubleClick={e => {
+        handleDoubleClick(e, prefersDark, setPrefersDark)
+      }}
+    >
       {/* <Header /> */}
       {TheHeader}
       {/* <OldSchoolSpaces number={3} />
