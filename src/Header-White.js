@@ -10,7 +10,7 @@ export const WhiteHeader = () => {
   const desktop = (
     <div
       style={{
-        backgroundColor: '#cecece',
+        backgroundColor: '#ededed',
         height: h,
         width: w,
         position: 'relative',
@@ -35,7 +35,7 @@ export const WhiteHeader = () => {
         <div
           style={{
             fontSize: 37,
-            color: '#00080e',
+            color: '#2d2d2d',
           }}
         >
           Adam Menges
@@ -44,7 +44,7 @@ export const WhiteHeader = () => {
           style={{
             fontSize: 17,
             marginTop: -2,
-            color: '#00080e',
+            color: '#2d2d2d',
           }}
         >
           <a class="a-white" href="mailto:adam@adammenges.com">
@@ -57,7 +57,7 @@ export const WhiteHeader = () => {
   const mobile = (
     <div
       style={{
-        backgroundColor: '#cecece',
+        backgroundColor: '#ededed',
         height: h,
         width: w,
         position: 'relative',
@@ -82,7 +82,7 @@ export const WhiteHeader = () => {
         <div
           style={{
             fontSize: 37,
-            color: '#00080e',
+            color: '#2d2d2d',
           }}
         >
           Adam Menges

@@ -39,7 +39,7 @@ function App() {
   // hack in using the right background color so the scroll rubber banding works
   // how I designed
   const baseHTML = document.querySelectorAll('html')
-  baseHTML[0].style.backgroundColor = prefersDark ? '#00080e' : '#cecece'
+  baseHTML[0].style.backgroundColor = prefersDark ? '#00080e' : '#ededed'
 
   const TheHeader = prefersDark ? <Header /> : <WhiteHeader />
   return (
