@@ -10,7 +10,7 @@ export const Header = () => {
   const desktop = (
     <div
       style={{
-        backgroundColor: '#0e0900',
+        backgroundColor: '#020100',
         height: h,
         width: w,
         position: 'relative',
@@ -55,7 +55,7 @@ export const Header = () => {
   const mobile = (
     <div
       style={{
-        backgroundColor: '#0e0900',
+        backgroundColor: '#020100',
         height: h,
         width: w,
         position: 'relative',

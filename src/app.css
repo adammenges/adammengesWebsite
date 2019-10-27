@@ -3,7 +3,7 @@
 }
 
 html {
-  background-color: #0e0900;
+  background-color: #020100;
   /* background-color: #ededed; */
 }
 
@@ -38,7 +38,7 @@ body {
   right: 0;
   bottom: 0;
   height: 50%;
-  background-color: #0e0900;
+  background-color: #020100;
 }
 
 #footerBackground {
@@ -47,7 +47,7 @@ body {
   right: 0;
   bottom: 0;
   height: 50%;
-  background-color: #0e0900;
+  background-color: #020100;
 }
 
 .me-blend {
@@ -55,7 +55,7 @@ body {
   background-size: 700px 700px;
   width: 700px;
   height: 700px;
-  background-color: #0e0900;
+  background-color: #020100;
   background-repeat: no-repeat;
   background-blend-mode: screen;
 }
@@ -66,7 +66,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #0e0900;
+  background-color: #020100;
   background-repeat: no-repeat;
   background-blend-mode: screen;
 }
@@ -76,7 +76,7 @@ body {
   background-size: 450px 450px;
   width: 450px;
   height: 450px;
-  background-color: #0e0900;
+  background-color: #020100;
   background-repeat: no-repeat;
   background-blend-mode: screen;
 }
@@ -86,7 +86,7 @@ body {
   background-size: 250px 250px;
   width: 250px;
   height: 250px;
-  background-color: #0e0900;
+  background-color: #020100;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-blend-mode: screen;
