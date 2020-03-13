@@ -6,8 +6,8 @@ const sendEmail = () => {
   url = 'mailto:' + "adam@adammenges.com"
   url += '?subject=' + "👋"
   url += '&body=' + ''
-  window.open(url);
-  // window.location = "mailto:adam@adammenges.com";
+  // window.open(url);
+  window.location = url;
 }
 
 export const Header = () => {
