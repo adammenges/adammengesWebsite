@@ -1,6 +1,10 @@
 import React from 'react'
 import { useWindowSize } from './utils.js'
 
+const sendEmail = () => {
+  window.location = "mailto:adam@adammenges.com";
+}
+
 export const WhiteHeader = () => {
   const size = useWindowSize()
   const h = size.height
@@ -47,9 +51,7 @@ export const WhiteHeader = () => {
             color: '#2d2d2d',
           }}
         >
-          <a class="a-white" href="mailto:adam@adammenges.com">
-            adam@adammenges.com
-          </a>
+          <div class="a-white" onClick={sendEmail}>adam@adammenges.com</div>
         </div>
       </div>
     </div>
@@ -93,9 +95,7 @@ export const WhiteHeader = () => {
             marginTop: -2,
           }}
         >
-          <a class="a-white" href="mailto:adam@adammenges.com">
-            adam@adammenges.com
-          </a>
+          <div class="a-white" onClick={sendEmail}>adam@adammenges.com</div>
         </div>
       </div>
     </div>

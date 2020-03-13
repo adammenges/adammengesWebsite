@@ -1,6 +1,15 @@
 import React from 'react'
 import { useWindowSize } from './utils.js'
 
+const sendEmail = () => {
+  var url;
+  url = 'mailto:' + "adam@adammenges.com"
+  url += '?subject=' + "👋"
+  url += '&body=' + ''
+  window.open(url);
+  // window.location = "mailto:adam@adammenges.com";
+}
+
 export const Header = () => {
   const size = useWindowSize()
   const h = size.height
@@ -45,9 +54,7 @@ export const Header = () => {
             marginTop: -2,
           }}
         >
-          <a class="a-black" href="mailto:adam@adammenges.com">
-            adam@adammenges.com
-          </a>
+          <div class="a-black" onClick={sendEmail}>adam@adammenges.com</div>
         </div>
       </div>
     </div>
@@ -90,9 +97,7 @@ export const Header = () => {
             marginTop: -2,
           }}
         >
-          <a class="a-black" href="mailto:adam@adammenges.com">
-            adam@adammenges.com
-          </a>
+          <div class="a-black" onClick={sendEmail}>adam@adammenges.com</div>
         </div>
       </div>
     </div>
