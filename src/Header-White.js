@@ -13,6 +13,7 @@ export const WhiteHeader = () => {
 
   const message = prefersDark ? 'Try turning on light mode' : 'Try turning on dark mode'
   const icon = prefersDark ? 'lightmode.png' : 'darkmode.png'
+  const showIcon = true
   
   const h = size.height
   const w = size.width
@@ -68,6 +69,7 @@ export const WhiteHeader = () => {
           position: 'absolute',
           left: w - 35,
           top: h - 55,
+          opacity: showIcon ? 1 : 0,
         }}
       >
         <p data-tip={message}>
@@ -129,8 +131,9 @@ export const WhiteHeader = () => {
       <div
         style={{
           position: 'absolute',
-          left: w - 35,
-          top: h - 55,
+          left: w - 45,
+          top: h - 65,
+          opacity: showIcon ? 1 : 0,
         }}
       >
         <p data-tip={message}>
@@ -142,7 +145,7 @@ export const WhiteHeader = () => {
           // console.log(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset)
           // return {left: place.location.left, top: place.location.top}
           // return location
-          return {left: w-205, top: h-40}
+          return {left: w-215, top: h-50}
         }} />
       </div>
     </div>

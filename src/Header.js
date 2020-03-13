@@ -13,6 +13,7 @@ export const Header = () => {
 
   const message = prefersDark ? 'Try turning on light mode' : 'Try turning on dark mode'
   const icon = prefersDark ? 'lightmode.png' : 'darkmode.png'
+  const showIcon = false
 
 
   const h = size.height
@@ -65,6 +66,7 @@ export const Header = () => {
           position: 'absolute',
           left: w - 35,
           top: h - 55,
+          opacity: showIcon ? 1 : 0,
         }}
       >
         <p data-tip={message}>
@@ -127,6 +129,7 @@ export const Header = () => {
           position: 'absolute',
           left: w - 35,
           top: h - 55,
+          opacity: showIcon ? 1 : 0,
         }}
       >
         <p data-tip={message}>
