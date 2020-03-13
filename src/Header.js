@@ -1,14 +1,6 @@
 import React from 'react'
-import { useWindowSize } from './utils.js'
-
-const sendEmail = () => {
-  var url;
-  url = 'mailto:' + "adam@adammenges.com"
-  url += '?subject=' + "👋"
-  url += '&body=' + ''
-  // window.open(url);
-  window.location = url;
-}
+import ReactTooltip from 'react-tooltip'
+import { useWindowSize, sendEmail } from './utils.js'
 
 export const Header = () => {
   const size = useWindowSize()
@@ -100,7 +92,13 @@ export const Header = () => {
           <div class="a-black" onClick={sendEmail}>adam@adammenges.com</div>
         </div>
       </div>
+
     </div>
   )
-  return <div style={{ position: 'relative' }}>{small ? mobile : desktop}</div>
+  return (
+    <div style={{ position: 'relative' }}>
+      {small ? mobile : desktop}
+    </div>
+    );
+  // return <div style={{ position: 'relative' }}>{small ? mobile : desktop}</div>
 }

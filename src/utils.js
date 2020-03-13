@@ -1,5 +1,14 @@
 import { useState, useEffect } from 'react'
 
+const sendEmail = () => {
+  var url;
+  url = 'mailto:' + "adam@adammenges.com"
+  url += '?subject=' + "👋"
+  url += '&body=' + ''
+  // window.open(url);
+  window.location = url;
+}
+
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState(() => ({
     width: document.documentElement.clientWidth,
@@ -24,4 +33,4 @@ const useWindowSize = () => {
   return windowSize
 }
 
-export { useWindowSize }
+export { useWindowSize, sendEmail }

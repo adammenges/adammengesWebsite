@@ -4,6 +4,8 @@ import { Header } from './Header.js'
 import { WhiteHeader } from './Header-White.js'
 import { Project } from './Project'
 import { useState, useEffect } from 'react'
+import { useWindowSize, sendEmail } from './utils.js'
+import ReactTooltip from 'react-tooltip'
 // import { CenterProjects } from './Center'
 
 // I should do this the right way later haha
@@ -26,20 +28,27 @@ function handleDoubleClick(e, prefersDark, setPrefersDark, setAutoSwitch) {
 }
 
 function App() {
-  // let [prefersDark, setPrefersDark] = useState(
-  //   () =>
-  //     window.matchMedia &&
-  //     window.matchMedia('(prefers-color-scheme: dark)').matches
-  // )
+  let [prefersDark, setPrefersDark] = useState(
+    () =>
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+  )
 
   let [autoSwitch, setAutoSwitch] = useState(() => {
-    return false
-  })
-
-  // force default dark mode for now until I finish designing the light mode UI
-  const [prefersDark, setPrefersDark] = useState(() => {
     return true
   })
+
+  const size = useWindowSize()
+  const h = size.height
+  const w = size.width
+  const small = w <= 640
+
+  const message = prefersDark ? 'Try turning on light mode' : 'Try turning on dark mode'
+
+  // force default dark mode for now until I finish designing the light mode UI
+  // const [prefersDark, setPrefersDark] = useState(() => {
+  //   return true
+  // })
 
   // hack in using the right background color so the
   // scroll rubber banding works how I designed
@@ -66,6 +75,18 @@ function App() {
     >
       {/* <Header /> */}
       {TheHeader}
+      <div
+        style={{
+          position: 'absolute',
+          left: w - 50,
+          top: h - 70,
+        }}
+      >
+        <p data-tip={message}>
+          <img width="50px" height="50px" src="darkmode.png" />
+        </p>
+        <ReactTooltip place={'left'} />
+      </div>
       {/* <OldSchoolSpaces number={3} />
       <Project>
         <div>stuff1</div>

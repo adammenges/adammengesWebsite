@@ -1,9 +1,6 @@
 import React from 'react'
-import { useWindowSize } from './utils.js'
-
-const sendEmail = () => {
-  window.location = "mailto:adam@adammenges.com";
-}
+import ReactTooltip from 'react-tooltip'
+import { useWindowSize, sendEmail } from './utils.js'
 
 export const WhiteHeader = () => {
   const size = useWindowSize()
@@ -25,14 +22,14 @@ export const WhiteHeader = () => {
         className="me-blend-white"
         style={{
           position: 'absolute',
-          left: w / 2 + 0,
+          left: w / 2 - 300,
           top: h / 2 - 170,
         }}
       />
       <div
         style={{
           position: 'absolute',
-          left: w / 2 - 300,
+          left: w / 2 + 40,
           top: h / 2 - 50, // size of div
         }}
       >
@@ -100,5 +97,9 @@ export const WhiteHeader = () => {
       </div>
     </div>
   )
-  return <div style={{ position: 'relative' }}>{small ? mobile : desktop}</div>
+  return (
+  <div style={{ position: 'relative' }}>
+    {small ? mobile : desktop}
+  </div>
+  );
 }
