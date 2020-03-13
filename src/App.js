@@ -75,18 +75,7 @@ function App() {
     >
       {/* <Header /> */}
       {TheHeader}
-      <div
-        style={{
-          position: 'absolute',
-          left: w - 50,
-          top: h - 70,
-        }}
-      >
-        <p data-tip={message}>
-          <img width="50px" height="50px" src="darkmode.png" />
-        </p>
-        <ReactTooltip place={'left'} />
-      </div>
+      {/* ({left:number, top: number}, currentEvent, currentTarget, node, place, desiredPlace, effect, offset) => ({left: number, top: number}) */}
       {/* <OldSchoolSpaces number={3} />
       <Project>
         <div>stuff1</div>

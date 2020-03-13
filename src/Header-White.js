@@ -1,12 +1,24 @@
 import React from 'react'
 import ReactTooltip from 'react-tooltip'
 import { useWindowSize, sendEmail } from './utils.js'
+import { useState, useEffect } from 'react'
 
 export const WhiteHeader = () => {
   const size = useWindowSize()
+  let [prefersDark, setPrefersDark] = useState(
+    () =>
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+  )
+
+  const message = prefersDark ? 'Try turning on light mode' : 'Try turning on dark mode'
+  const icon = prefersDark ? 'lightmode.png' : 'darkmode.png'
+  
   const h = size.height
   const w = size.width
   const small = w <= 640
+
+
 
   const desktop = (
     <div
@@ -51,6 +63,25 @@ export const WhiteHeader = () => {
           <div class="a-white" onClick={sendEmail}>adam@adammenges.com</div>
         </div>
       </div>
+      <div
+        style={{
+          position: 'absolute',
+          left: w - 35,
+          top: h - 55,
+        }}
+      >
+        <p data-tip={message}>
+          <img width="30px" height="30px" src={icon} />
+        </p>
+        <ReactTooltip place={'left'} overridePosition={(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset) => {
+          // currentTarget.location.top
+          // return {left: currentTarget.location.left, top: currentTarget.location.top}
+          // console.log(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset)
+          // return {left: place.location.left, top: place.location.top}
+          // return location
+          return {left: w-205, top: h-40}
+        }} />
+      </div>
     </div>
   )
   const mobile = (
@@ -94,6 +125,25 @@ export const WhiteHeader = () => {
         >
           <div class="a-white" onClick={sendEmail}>adam@adammenges.com</div>
         </div>
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          left: w - 35,
+          top: h - 55,
+        }}
+      >
+        <p data-tip={message}>
+          <img width="30px" height="30px" src={icon} />
+        </p>
+        <ReactTooltip place={'left'} overridePosition={(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset) => {
+          // currentTarget.location.top
+          // return {left: currentTarget.location.left, top: currentTarget.location.top}
+          // console.log(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset)
+          // return {left: place.location.left, top: place.location.top}
+          // return location
+          return {left: w-205, top: h-40}
+        }} />
       </div>
     </div>
   )
