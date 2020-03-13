@@ -21,14 +21,14 @@ export const Header = () => {
         className="me-blend"
         style={{
           position: 'absolute',
-          left: w / 2 - 200,
+          left: w / 2 - 540,
           top: h / 2 - 320,
         }}
       />
       <div
         style={{
           position: 'absolute',
-          left: w / 2 - 300,
+          left: w / 2 + 70,
           top: h / 2 - 50, // size of div
         }}
       >
