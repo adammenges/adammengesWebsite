@@ -4,6 +4,10 @@ import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
+document.addEventListener('touchmove', function (event) {
+    if (event.scale !== 1) { event.preventDefault(); }
+  }, false);
+
 ReactDOM.render(<App />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change

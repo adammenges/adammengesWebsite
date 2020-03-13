@@ -21,6 +21,13 @@ const useWindowSize = () => {
         width: document.documentElement.clientWidth,
         height: document.documentElement.clientHeight,
       })
+      // work around iPad bug on orientationchange
+      setInterval(() => {
+        setWindowSize({
+          width: document.documentElement.clientWidth,
+          height: document.documentElement.clientHeight,
+        })
+      }, 100)
     }
     window.addEventListener('resize', onResize)
     window.addEventListener('orientationchange', onResize)
