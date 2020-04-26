@@ -61,7 +61,7 @@ export const WhiteHeader = () => {
             color: '#2d2d2d',
           }}
         >
-          <div class="a-white" onClick={sendEmail}>adam@adammenges.com</div>
+          <div class="a-white" onClick={sendEmail}>hello@adammenges.com</div>
         </div>
       </div>
       <div
@@ -125,7 +125,7 @@ export const WhiteHeader = () => {
             marginTop: -2,
           }}
         >
-          <div class="a-white" onClick={sendEmail}>adam@adammenges.com</div>
+          <div class="a-white" onClick={sendEmail}>hello@adammenges.com</div>
         </div>
       </div>
       <div

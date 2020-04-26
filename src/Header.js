@@ -58,7 +58,7 @@ export const Header = () => {
             marginTop: -2,
           }}
         >
-          <div class="a-black" onClick={sendEmail}>adam@adammenges.com</div>
+          <div class="a-black" onClick={sendEmail}>hello@adammenges.com</div>
         </div>
       </div>
       <div
@@ -121,7 +121,7 @@ export const Header = () => {
             marginTop: -2,
           }}
         >
-          <div class="a-black" onClick={sendEmail}>adam@adammenges.com</div>
+          <div class="a-black" onClick={sendEmail}>hello@adammenges.com</div>
         </div>
       </div>
       <div

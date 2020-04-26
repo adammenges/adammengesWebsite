@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 const sendEmail = () => {
   var url;
-  url = 'mailto:' + "adam@adammenges.com"
+  url = 'mailto:' + "hello@adammenges.com"
   url += '?subject=' + "👋"
   url += '&body=' + ''
   // window.open(url);
