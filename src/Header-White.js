@@ -132,13 +132,13 @@ export const WhiteHeader = () => {
         style={{
           position: 'absolute',
           left: w - 45,
-          top: h - 65,
+          top: h - 50,
           opacity: showIcon ? 1 : 0,
         }}
       >
-        <p data-tip={message}>
+        <div data-tip={message}>
           <img width="30px" height="30px" src={icon} />
-        </p>
+        </div>
         <ReactTooltip place={'left'} overridePosition={(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset) => {
           // currentTarget.location.top
           // return {left: currentTarget.location.left, top: currentTarget.location.top}
