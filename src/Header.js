@@ -62,7 +62,7 @@ export const Header = () => {
           <div
             class="a-black"
             style={{
-              paddingTop: '3px',
+              paddingTop: '2px',
             }}
             onClick={sendEmail}
           >
