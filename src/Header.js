@@ -62,7 +62,7 @@ export const Header = () => {
           <div
             class="a-black"
             style={{
-              paddingTop: '2px',
+              marginTop: '-7px',
             }}
             onClick={sendEmail}
           >
@@ -142,7 +142,13 @@ export const Header = () => {
             marginTop: -2,
           }}
         >
-          <div class="a-black" onClick={sendEmail}>
+          <div
+            class="a-black"
+            style={{
+              marginTop: '-7px',
+            }}
+            onClick={sendEmail}
+          >
             hello@adammenges.com
           </div>
         </div>

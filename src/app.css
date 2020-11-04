@@ -8,7 +8,8 @@ html {
 }
 
 body {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  /* font-family: 'SF Pro Display', sans-serif; */
   font-weight: 300;
   font-size: 16px;
   color: rgb(194, 194, 194);
@@ -17,7 +18,8 @@ body {
 }
 
 .a-black {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  /* font-family: 'SF Pro Display', sans-serif; */
   color: rgb(194, 194, 194);
   text-decoration: none;
   font-weight: 300;
@@ -25,7 +27,8 @@ body {
 }
 
 .a-white {
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  /* font-family: 'SF Pro Display', sans-serif; */
   color: rgb(37, 37, 37);
   text-decoration: none;
   font-weight: 300;
