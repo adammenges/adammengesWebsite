@@ -11,10 +11,11 @@ export const Header = () => {
       window.matchMedia('(prefers-color-scheme: dark)').matches
   )
 
-  const message = prefersDark ? 'Try turning on light mode' : 'Try turning on dark mode'
+  const message = prefersDark
+    ? 'Try turning on light mode'
+    : 'Try turning on dark mode'
   const icon = prefersDark ? 'lightmode.png' : 'darkmode.png'
   const showIcon = false
-
 
   const h = size.height
   const w = size.width
@@ -58,7 +59,15 @@ export const Header = () => {
             marginTop: -2,
           }}
         >
-          <div class="a-black" onClick={sendEmail}>hello@adammenges.com</div>
+          <div
+            class="a-black"
+            style={{
+              paddingTop: '3px',
+            }}
+            onClick={sendEmail}
+          >
+            hello@adammenges.com
+          </div>
         </div>
       </div>
       <div
@@ -72,14 +81,26 @@ export const Header = () => {
         <p data-tip={message}>
           <img width="30px" height="30px" src={icon} />
         </p>
-        <ReactTooltip place={'left'} overridePosition={(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset) => {
-          // currentTarget.location.top
-          // return {left: currentTarget.location.left, top: currentTarget.location.top}
-          // console.log(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset)
-          // return {left: place.location.left, top: place.location.top}
-          // return location
-          return {left: w-205, top: h-40}
-        }} />
+        <ReactTooltip
+          place={'left'}
+          overridePosition={(
+            location,
+            currentEvent,
+            currentTarget,
+            node,
+            place,
+            desiredPlace,
+            effect,
+            offset
+          ) => {
+            // currentTarget.location.top
+            // return {left: currentTarget.location.left, top: currentTarget.location.top}
+            // console.log(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset)
+            // return {left: place.location.left, top: place.location.top}
+            // return location
+            return { left: w - 205, top: h - 40 }
+          }}
+        />
       </div>
     </div>
   )
@@ -121,7 +142,9 @@ export const Header = () => {
             marginTop: -2,
           }}
         >
-          <div class="a-black" onClick={sendEmail}>hello@adammenges.com</div>
+          <div class="a-black" onClick={sendEmail}>
+            hello@adammenges.com
+          </div>
         </div>
       </div>
       <div
@@ -135,21 +158,29 @@ export const Header = () => {
         <p data-tip={message}>
           <img width="30px" height="30px" src={icon} />
         </p>
-        <ReactTooltip place={'left'} overridePosition={(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset) => {
-          // currentTarget.location.top
-          // return {left: currentTarget.location.left, top: currentTarget.location.top}
-          // console.log(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset)
-          // return {left: place.location.left, top: place.location.top}
-          // return location
-          return {left: w-205, top: h-40}
-        }} />
+        <ReactTooltip
+          place={'left'}
+          overridePosition={(
+            location,
+            currentEvent,
+            currentTarget,
+            node,
+            place,
+            desiredPlace,
+            effect,
+            offset
+          ) => {
+            // currentTarget.location.top
+            // return {left: currentTarget.location.left, top: currentTarget.location.top}
+            // console.log(location, currentEvent, currentTarget, node, place, desiredPlace, effect, offset)
+            // return {left: place.location.left, top: place.location.top}
+            // return location
+            return { left: w - 205, top: h - 40 }
+          }}
+        />
       </div>
     </div>
   )
-  return (
-    <div style={{ position: 'relative' }}>
-      {small ? mobile : desktop}
-    </div>
-    );
+  return <div style={{ position: 'relative' }}>{small ? mobile : desktop}</div>
   // return <div style={{ position: 'relative' }}>{small ? mobile : desktop}</div>
 }

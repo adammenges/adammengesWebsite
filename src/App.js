@@ -24,15 +24,20 @@ const OldSchoolSpaces = ({ number }) => {
 
 function handleDoubleClick(e, prefersDark, setPrefersDark, setAutoSwitch) {
   // setPrefersDark(!prefersDark)
-  setAutoSwitch(true)
+  setAutoSwitch(false)
 }
 
 function App() {
-  let [prefersDark, setPrefersDark] = useState(
-    () =>
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-  )
+  // let [prefersDark, setPrefersDark] = useState(
+  //   () =>
+  //     window.matchMedia &&
+  //     window.matchMedia('(prefers-color-scheme: dark)').matches
+  // )
+
+  // force default dark mode for now until I finish designing the light mode UI
+  const [prefersDark, setPrefersDark] = useState(() => {
+    return true
+  })
 
   let [autoSwitch, setAutoSwitch] = useState(() => {
     return true
@@ -43,12 +48,9 @@ function App() {
   const w = size.width
   const small = w <= 640
 
-  const message = prefersDark ? 'Try turning on light mode' : 'Try turning on dark mode'
-
-  // force default dark mode for now until I finish designing the light mode UI
-  // const [prefersDark, setPrefersDark] = useState(() => {
-  //   return true
-  // })
+  const message = prefersDark
+    ? 'Try turning on light mode'
+    : 'Try turning on dark mode'
 
   // hack in using the right background color so the
   // scroll rubber banding works how I designed
@@ -56,20 +58,20 @@ function App() {
   baseHTML[0].style.backgroundColor = prefersDark ? '#00080e' : '#ededed'
 
   // this is insane, but apparently there's no event to listen for so here we are
-  setInterval(() => {
-    const currentlyDark =
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-    if (currentlyDark !== prefersDark && autoSwitch) {
-      setPrefersDark(currentlyDark)
-    }
-  }, 200)
+  // setInterval(() => {
+  //   const currentlyDark =
+  //     window.matchMedia &&
+  //     window.matchMedia('(prefers-color-scheme: dark)').matches
+  //   if (currentlyDark !== prefersDark && autoSwitch) {
+  //     setPrefersDark(currentlyDark)
+  //   }
+  // }, 200)
 
   const TheHeader = prefersDark ? <Header /> : <WhiteHeader />
   return (
     <div
       className="App noWebShit"
-      onDoubleClick={e => {
+      onDoubleClick={(e) => {
         handleDoubleClick(e, prefersDark, setPrefersDark, setAutoSwitch)
       }}
     >
