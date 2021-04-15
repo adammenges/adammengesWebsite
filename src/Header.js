@@ -2,6 +2,7 @@ import React from 'react'
 import ReactTooltip from 'react-tooltip'
 import { useWindowSize, sendEmail } from './utils.js'
 import { useState, useEffect } from 'react'
+import me from './images/me.jpg'
 
 export const Header = () => {
   const size = useWindowSize()
@@ -37,6 +38,7 @@ export const Header = () => {
           position: 'absolute',
           left: w / 2 - 540,
           top: h / 2 - 320,
+          backgroundImage: `url("https://adammenges.com/me.jpg")`,
         }}
       />
       <div
@@ -51,7 +53,7 @@ export const Header = () => {
             fontSize: 37,
           }}
         >
-          Adam Menges
+          Adam Header
         </div>
         <div
           style={{
@@ -120,6 +122,7 @@ export const Header = () => {
           position: 'absolute',
           left: w / 2 - 225,
           top: h / 2 - 225 - 50,
+          backgroundImage: `url("https://adammenges.com/me.jpg")`,
         }}
       />
       <div

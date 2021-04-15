@@ -5,10 +5,15 @@ export default {
   siteRoot: 'https://adammenges.com',
   basePath: '/',
   getRoutes: async () => {
+    console.log('getRoutes')
+    console.log('getRoutes')
+    console.log('getRoutes')
+    console.log('getRoutes')
+    console.log('getRoutes')
     return [
       {
         path: 'portfolio',
-        template: 'src/Portfolio',
+        template: 'src/Portfolio.js',
         // getData: async () => ({
         //   portfolio,
         // }),
