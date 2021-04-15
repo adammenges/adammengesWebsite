@@ -53,7 +53,7 @@ export const Header = () => {
             fontSize: 37,
           }}
         >
-          Adam Header
+          Adam Menges
         </div>
         <div
           style={{
