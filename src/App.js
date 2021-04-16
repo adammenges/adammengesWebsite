@@ -1,7 +1,7 @@
 import React from 'react'
 import './app.css'
-import { Header } from './Header.js'
-import { Portfolio } from './Portfolio.js'
+import { Header, Portfolio } from './Header.js'
+// import { Portfolio } from './Portfolio.js'
 import { WhiteHeader } from './Header-White.js'
 import { Project } from './Project'
 

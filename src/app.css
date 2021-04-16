@@ -1,3 +1,8 @@
+@font-face {
+  font-family: MyFont;
+  src: url('https://adammenges.com/font-backup/Kanit-Thin.ttf');
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -8,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Kanit', sans-serif;
+  font-family: MyFont, sans-serif;
   /* font-family: 'SF Pro Display', sans-serif; */
   font-weight: 300;
   font-size: 16px;
@@ -18,16 +23,16 @@ body {
 }
 
 .a-black {
-  font-family: 'Kanit', sans-serif;
+  font-family: MyFont, sans-serif;
   /* font-family: 'SF Pro Display', sans-serif; */
   color: rgb(194, 194, 194);
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 16px;
 }
 
 .a-white {
-  font-family: 'Kanit', sans-serif;
+  font-family: MyFont, sans-serif;
   /* font-family: 'SF Pro Display', sans-serif; */
   color: rgb(37, 37, 37);
   text-decoration: none;

@@ -51,7 +51,7 @@ export const Portfolio = () => {
             fontSize: 37,
           }}
         >
-          Adam Portttt
+          Adam Port
         </div>
         <div
           style={{

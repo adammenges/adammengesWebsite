@@ -193,3 +193,7 @@ export const Header = () => {
   return <div style={{ position: 'relative' }}>{small ? mobile : desktop}</div>
   // return <div style={{ position: 'relative' }}>{small ? mobile : desktop}</div>
 }
+
+export const Portfolio = () => {
+  return <div style={{ position: 'relative' }}>{'T'}</div>
+}
