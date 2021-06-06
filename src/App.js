@@ -1,11 +1,14 @@
 import React from 'react'
 import './app.css'
-import { Header } from './Header.js'
+import { Header, Portfolio } from './Header.js'
+// import { Portfolio } from './Portfolio.js'
 import { WhiteHeader } from './Header-White.js'
 import { Project } from './Project'
+
 import { useState, useEffect } from 'react'
 import { useWindowSize, sendEmail } from './utils.js'
 import ReactTooltip from 'react-tooltip'
+import { Route, Switch, Link } from 'react-router-dom'
 // import { CenterProjects } from './Center'
 
 // I should do this the right way later haha
@@ -68,6 +71,10 @@ function App() {
   // }, 200)
 
   const TheHeader = prefersDark ? <Header /> : <WhiteHeader />
+
+  // const homePage = false ? TheHeader : <Portfolio />
+  // const homePage = <Portfolio />
+  const homePage = <Header />
   return (
     <div
       className="App noWebShit"
@@ -75,20 +82,21 @@ function App() {
         handleDoubleClick(e, prefersDark, setPrefersDark, setAutoSwitch)
       }}
     >
-      {/* <Header /> */}
-      {TheHeader}
-      {/* ({left:number, top: number}, currentEvent, currentTarget, node, place, desiredPlace, effect, offset) => ({left: number, top: number}) */}
-      {/* <OldSchoolSpaces number={3} />
-      <Project>
-        <div>stuff1</div>
-        <div>stuff2</div>
-        <div>stuff3</div>
-        <div>stuff4</div>
-        <div>stuff5</div>
-        <div>stuff6</div>
-        <div>stuff7</div>
-      </Project>
-      <OldSchoolSpaces number={7} /> */}
+      <Switch>
+        <Route exact path="/">
+          {homePage}
+        </Route>
+        // https://adammenges.com/portfolio
+        <Route path="/portfolio">
+          <Portfolio />
+        </Route>
+        <Route path="/about">
+          <Portfolio />
+        </Route>
+        <Route path="/design">
+          <Portfolio />
+        </Route>
+      </Switch>
     </div>
   )
 }

@@ -1,38 +1,39 @@
-import path from "path";
-import axios from "axios";
+import path from 'path'
+import axios from 'axios'
 
 export default {
-  siteRoot: "https://cv.adammenges.com",
-  basePath: "/",
+  siteRoot: 'https://adammenges.com',
+  basePath: '/',
   getRoutes: async () => {
-    const { data: posts } = await axios.get(
-      "https://jsonplaceholder.typicode.com/posts"
-    );
-
+    console.log('getRoutes')
+    console.log('getRoutes')
+    console.log('getRoutes')
+    console.log('getRoutes')
+    console.log('getRoutes')
     return [
       {
-        path: "/blog",
-        getData: () => ({
-          posts
-        }),
-        children: posts.map(post => ({
-          path: `/post/${post.id}`,
-          template: "src/containers/Post",
-          getData: () => ({
-            post
-          })
-        }))
-      }
-    ];
+        path: 'portfolio',
+        template: 'src/Portfolio.js',
+        // getData: async () => ({
+        //   portfolio,
+        // }),
+      },
+
+      // A 404 component
+      {
+        path: '404',
+        template: 'src/404',
+      },
+    ]
   },
   plugins: [
     [
-      require.resolve("react-static-plugin-source-filesystem"),
+      require.resolve('react-static-plugin-source-filesystem'),
       {
-        location: path.resolve("./src/pages")
-      }
+        location: path.resolve('./src'),
+      },
     ],
-    require.resolve("react-static-plugin-reach-router"),
-    require.resolve("react-static-plugin-sitemap")
-  ]
-};
+    require.resolve('react-static-plugin-reach-router'),
+    require.resolve('react-static-plugin-sitemap'),
+  ],
+}

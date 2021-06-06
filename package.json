@@ -9,15 +9,18 @@
     "react-dom": "^16.8.6",
     "react-gesture-responder": "^2.1.0",
     "react-gesture-view": "^2.1.1",
-    "react-scripts": "3.0.1",
-    "react-tooltip": "^4.1.2"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-tooltip": "^4.1.2",
+    "webpack-cli": "^4.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-new": "webpack-dev-server --env.ENVIRONMENT=development --content-base src/ --mode development --watch --watch-poll",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn build",
+    "predeploy": "yarn build && cp build/index.html build/404.html",
     "deploy": "gh-pages -d build",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
@@ -43,7 +46,6 @@
     "@storybook/addon-links": "^5.0.11",
     "@storybook/addons": "^5.0.11",
     "@storybook/react": "^5.0.11",
-    "babel-loader": "8.0.5",
     "gh-pages": "^2.0.1"
   }
 }
